@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>New Document</title>
+
+	<meta name="generator" content="EverEdit" />
+
+	<meta name="author" content="" />
+
+	<meta name="keywords" content="" />
+
+	<meta name="description" content="" />
+
+</head>
+
+<body>
+
+	<div id="dplayer"></div>
+
+	<script src="js/hls.min.js"></script>
+
+	<script src="js/DPlayer.min.js"></script>
+
+	<script>
+
+		const dp = new DPlayer({
+
+		    container: document.getElementById('dplayer'),
+
+		    video: {
+
+		        url: 'https://pull.hwvideo.hwcloudlive.com/live/2bd7d0fce91f8b97cd1edcc5845f4849.flv',
+
+		        type: 'hls',
+
+		    },
+
+		    pluginOptions: {
+
+		        hls: {
+
+		            // hls config
+
+		        },
+
+		    },
+
+		});
+
+	</script>
+
+</body>
+
+</html>
+
