@@ -542,5 +542,5 @@
     "cms.qdwght.com"
   ],
   "wallpaper": "https://picsum.photos/1280/720/?blur=10",
-  "spider": "aHR0cHM6Ly9naXRlYS5jb20vUGFuZG9yYTIyNzcvVFYvcmF3L2JyYW5jaC9tYWluL2N1c3RvbV9zcGlkZXIuamFy"
+  "spider": "https://gitea.com/Pandora2277/TV/raw/branch/main/custom_spider.jar"
 }
