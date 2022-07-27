@@ -550,6 +550,6 @@
     "cdnjs.hnfenxun.com",
     "cms.qdwght.com"
   ],
-  "wallpaper": "http://api.df100.ltd/dongm.php?d=nanjing",
+  "wallpaper": "http://tvbox.ueue.com/main/api.php",
   "spider": "https://freetvbox.ml/tvbox/0/custom_spider.txt"
 }
