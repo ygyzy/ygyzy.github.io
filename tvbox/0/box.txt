@@ -242,7 +242,7 @@
         {
           "name": "redirect",
           "urls": [
-            "proxy://do=live&type=txt&ext=https://freetvbox.ml/tvbox/0/live/live.txt"
+            "proxy://do=live&type=txt&ext=aHR0cHM6Ly9mcmVldHZib3gubWwvdHZib3gvMC9saXZlL2xpdmUudHh0"
           ]
         }
       ]
@@ -550,6 +550,6 @@
     "cdnjs.hnfenxun.com",
     "cms.qdwght.com"
   ],
-  "wallpaper": "https://picsum.photos/1280/720/?blur=10",
+  "wallpaper": "http://api.df100.ltd/dongm.php?d=nanjing",
   "spider": "https://freetvbox.ml/tvbox/0/custom_spider.txt"
 }
