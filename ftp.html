@@ -1,0 +1,76 @@
+
+<!DOCTYPE html><html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head><title>MiXplorer</title><link rel="shortcut icon" href="/favicon.ico">
+    <style>body{background-color:#F9F9F9;color:#222222;margin:10px;padding:0}
+h1,h2,h3 {font-family:Helvetica,Verdana,sans-serif;padding:0;margin:0}
+h3.directory {font-size:18px;float:left;width:auto}
+h2.deviceName {font-size:20px;float:right;text-align:right;width:auto}
+a{text-decoration:none;color:#112387}
+span.dirname {font-family:Helvetica,Verdana,sans-serif;font-size:14px;font-weight:bold}
+.share {font-size:16px;color:#000080}
+span.filesize {font-size:12px;color:#808080}
+#content {font-family:Geneva,Arial,Helvetica,sans-serif;font-size: 12px;font-weight:normal;color:#222222;width:400px;padding:5px;margin:0}
+.sbtn {height:22px;width:82px;font-family:Geneva,Arial,Helvetica,sans-serif;font-size:12px;padding:0;margin:0}
+#mform {font-family:Geneva,Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal;color:#222222}
+ul{display:block;clear:left;list-style-type:circle}
+li{color:#222222;margin:10px}</style>
+    <!--<link rel="stylesheet" type="text/css" href="/style.css"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <script language="javascript" type="text/javascript">
+		<!--
+		var unit = ['KiB','MiB','GiB','TiB'];
+		function readableSize(bytes) {
+          if (Math.abs(bytes) < 1024)
+            return bytes + 'B';
+          var i = -1;
+          do {
+            bytes /= 1024;
+            i++;
+          } while (i<unit.length-1 && (Math.round(Math.abs(bytes)*10)/10) >= 1024);
+          return bytes.toFixed(1) + '' + unit[i];
+        }
+
+        function $(id){return document.getElementById(id)}
+        function startUpload() {
+			var element = $('fil');
+			var f = element.files[0];
+			if (f != null) {
+			    var p = $('progress');
+                var xhr = new XMLHttpRequest();
+                xhr.upload.addEventListener("progress", function (e) {
+                    if (e.lengthComputable)
+                        p.innerHTML = readableSize(e.loaded) + "/" + readableSize(e.total);
+                });
+                xhr.upload.addEventListener("load", function () {
+                    p.innerHTML='';
+                });
+                xhr.addEventListener('readystatechange', function(e) {
+                  if(this.readyState === 4 && this.status === 200) {
+                    element.value='';
+                    window.location.reload();
+                  }
+                });
+                xhr.open('PUT', f.name);
+                xhr.overrideMimeType(f.type);
+                xhr.setRequestHeader("Content-Type", f.type);
+                xhr.send(f);
+            }
+		}
+        //-->
+    </script>
+</head>
+<body>
+<h3 class="directory">/tvbox/</h3>
+<h2 class="deviceName">HUAWEI STF-AL10<br/>9.09 GB / 110.65 GB</h2><br/>
+<div id="content" style="font-size:11px">
+    <div><input id="fil" name="fil" type="file" size="30" style="width:600px;margin-bottom:15px"/></div>
+    <div><input type="button" class="sbtn" value="上传" onclick="javascript:startUpload();"/></div>
+    <div><span id="progress"></span></div>
+</div>
+<!-- Share -->
+<div style="display:none"><a target="_blank" href="">下载</a></div>
+<br/>
+
+<br/>
+</body></html>
