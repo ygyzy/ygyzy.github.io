@@ -7,7 +7,8 @@
       "api": "csp_SP360",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/360.json"
     },
     {
       "key": "Kunyu77",
@@ -35,7 +36,8 @@
       "api": "csp_Smdyy",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Smdyy.json"
     },
     {
       "key": "小宝影院",
@@ -44,7 +46,8 @@
       "api": "csp_Xiaoh",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Xiaoh.json"
     },
     {
       "key": "If101",
@@ -53,7 +56,8 @@
       "api": "csp_If101",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/If101.json"
     },
     {
       "key": "Ikan",
@@ -71,7 +75,8 @@
       "api": "csp_Olevod",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Olevod.json"
     },
     {
       "key": "厂长影视",
@@ -98,7 +103,8 @@
       "api": "csp_Lib",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Lib.json"
     },
     {
       "key": "Nfyun",
@@ -107,7 +113,8 @@
       "api": "csp_Nfyun",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Nfyun.json"
     },
     {
       "key": "小熊",
@@ -164,7 +171,8 @@
       "api": "csp_Zxzj",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Zxzj.json"
     },
     {
       "key": "Cokemv",
@@ -173,7 +181,8 @@
       "api": "csp_Cokemv",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Cokemv.json"
     },
     {
       "key": "Auete",
@@ -182,7 +191,8 @@
       "api": "csp_Auete",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+	"ext": "https://freetvbox.ml/tvbox/0/sub/Auete.json"
     },
     {
       "key": "Bili",
@@ -242,7 +252,7 @@
         {
           "name": "redirect",
           "urls": [
-            "proxy://do=live&type=txt&ext=aHR0cHM6Ly9mcmVldHZib3gubWwvdHZib3gvMC9saXZlL2xpdmUudHh0"
+            "proxy://do=live&type=txt&ext=aHR0cDovL2ZyZWV0dmJveC5tbC90dmJveC8wL2xpdmUvbGl2ZS50eHQ="
           ]
         }
       ]
@@ -550,6 +560,6 @@
     "cdnjs.hnfenxun.com",
     "cms.qdwght.com"
   ],
-  "wallpaper": "http://tvbox.ueue.com/main/api.php",
+  "wallpaper": "http://www.kf666888.cn/api/tvbox/img",
   "spider": "https://freetvbox.ml/tvbox/0/custom_spider.txt"
 }
