@@ -3,4 +3,4 @@
 [仓库介绍](https://github.com/ygyzy/ygyzy.github.io#仓库介绍)
 
 ## 仓库介绍
-本仓库自动化功能全部基于 `GitHub Page` 实现,访问地址： [【晴园】发布站](https://freetvbox.ml)
+本仓库功能全部基于 `GitHub Page` 实现,访问地址： [【晴园】发布站](https://freetvbox.ml)
