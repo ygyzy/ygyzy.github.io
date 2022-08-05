@@ -5,7 +5,16 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="renderer" content="webkit">
-   <meta http-equiv="refresh" content="10;url=/tvbox/">
+   <meta http-equiv="refresh" content="15;url=/tvbox/">
+<link rel="stylesheet" href="/css/sweetalert.min.css" />
+<script type="text/javascript" src="/js2/sweetalert.min.js"></script>
+<script type="text/javascript">
+  window.onload = function(){
+    document.body.oncopy = function() {
+    swal("复制成功！", "微信公众号【晴园】提示：撰文不易，若转载请务必保留原文链接，谢谢合作！！！","success");
+        };
+    }
+</script>
   <style>
       body {
         padding: 36px;
@@ -60,30 +69,16 @@
 <!-- 接口1 -->
 
 </br></br>
-<div class="copy--text copy_text" id="copy">https://ygyzy.github.io/api/qy.m3u8</div>
-    <div class="ma-btn extra copy_btn">复制</div>[晴园推荐：备用接口](https://qyys.ml/2)
-    <script>
-        var btn = document.querySelectorAll(".copy_btn")[0],
-                copy_text = document.querySelectorAll(".copy_text")[0];
-        btn.addEventListener("click",function() {
-            copy(copy_text);
-        },false);
- 
-        function copy(el) {
-            var range = document.createRange();
-            var end = el.childNodes.length;
-            range.setStart(el,0);
-            range.setEnd(el,end);
- 
-            var selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            document.execCommand("copy",false,null);
-            selection.removeRange(range);
-        }
-    </script>
+
+<input type="text" size="45" id="url" value="https://ygyzy.github.io/api/qy.m3u8">
+<input type="button" value="复制" onClick="url.select();document.execCommand('Copy')">[晴园推荐：备用接口（推荐接口）](https://qyys.ml/2)
+
 <!-- 接口2 -->
 </br></br>
+
+
+
+
 
 <h3>磁力播放测试</h3>
 <script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.js"></script>
