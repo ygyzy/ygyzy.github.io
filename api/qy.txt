@@ -72,6 +72,11 @@
 {"key":"KanSJ_spider","name":"🐞看视界〔SP〕","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1,
 "jar": "https://freetvbox.ml/api/jar/ksj.jar;md5;7eacb357cf27abce92ed497367221e5a"},
 
+
+{"key": "9E03","name": "9️⃣9E03","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,
+"ext": "https://vod.9e03.com/lvdou_api.php/v1.vod",
+        "jar": 
+"https://freetvbox.ml/api/jar/ys0805w.jar;md5;6AA46424AD6CDBF9AAB979F4C0E5A060"},
    {
       "key": "Bili",
       "name": "🚉B站〔SP〕",
@@ -83,7 +88,16 @@
       "ext": "https://freetvbox.ml/api/sub/Bili.json",
 "jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
-
+    {
+     "key": "csp_xpath_A33",
+     "name": "🎸MTV",
+     "type": 3,
+     "api": "csp_XPath",
+     "searchable": 1,
+     "quickSearch": 0,
+     "filterable": 1,
+     "ext": "https://freetvbox.ml/api/Xpath/mtv.json"
+},
  
     {
       "key": "追剧喵",
@@ -514,6 +528,19 @@
 
 
     {
+      "key": "csp_biubiu_tvbox",
+      "name": "👼TV9box〔XB〕",
+      "type": 3,
+      "api": "csp_XBiubiu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "https://freetvbox.ml/api/XBiubiu/tvbox.json",
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
+    },
+
+
+    {
       "key":"csp_xpath_wmkk",
       "name":"👓完美看看〔XP〕",
       "type":3,
@@ -614,6 +641,30 @@
       "filterable": 1,
       "ext": "https://www.zhanlangbu.com/ruifenglb_api.php/v1.vod"
     },
+
+
+
+      {"key":"诺讯资源","name":"🏠诺讯资源                        (官)","type":1,"api":"http://caiji.nxflv.com/api.php/provide/vod/","searchable":1,"quickSearch":1,
+      "filterable": 0,
+      "categories": [
+        "国产剧",
+        "港台剧",
+        "日韩剧",
+        "欧美剧",
+        "综艺频道",
+        "动漫频道",
+        "综合频道",
+        "动作片",
+        "喜剧片",
+        "爱情片",
+        "科幻片",
+        "恐怖片",
+        "剧情片",
+        "战争片"
+      ]
+      }, 
+    
+
     {
       "key": "极速",
       "name": "🏍️极速〔聚〕",
