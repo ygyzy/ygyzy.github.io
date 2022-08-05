@@ -55,7 +55,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "293视频",
@@ -81,7 +81,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/sub/Bili.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
  
@@ -128,7 +128,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
     {
@@ -139,7 +139,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "神马影院",
@@ -149,7 +149,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Kuaikan",
@@ -159,7 +159,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "小熊",
@@ -169,7 +169,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "zxzj",
@@ -179,7 +179,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Cokemv",
@@ -189,7 +189,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Auete",
@@ -199,7 +199,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Lib",
@@ -209,7 +209,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Ikan",
@@ -219,7 +219,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Olevod",
@@ -229,7 +229,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "小苹果",
@@ -239,7 +239,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "Nfyun",
@@ -249,7 +249,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "小宝影院",
@@ -259,7 +259,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "If101",
@@ -269,7 +269,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
 
@@ -317,7 +317,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "28801b1dbaf4418fb7bc221a575703dd",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -329,7 +329,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "28801b1dbaf4418fb7bc221a575703dd",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -341,7 +341,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "28801b1dbaf4418fb7bc221a575703dd",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -353,7 +353,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": "28801b1dbaf4418fb7bc221a575703dd",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
    
@@ -366,7 +366,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPbd/Bdys.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_Xpath_lezhu",
@@ -377,7 +377,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMac/lezhutv.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
     {
@@ -389,7 +389,7 @@
       "quickSearch":0,
       "filterable":0,
       "ext":"https://freetvbox.ml/api/Xpath/bttwoo.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 },
     {
       "key":"csp_xpath_saohuotv",
@@ -400,7 +400,7 @@
       "quickSearch":1,
       "filterable":1,
       "ext":"https://freetvbox.ml/api/Xpath/saohuotv.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_biubiu_dmxq",
@@ -411,7 +411,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://freetvbox.ml/api/XBiubiu/dmxq.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
 
@@ -424,7 +424,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMacFilter/huohuo.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_xpath_naifeiorg",
@@ -435,7 +435,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMacFilter/naifeiorg.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_biubiu_kdys",
@@ -446,7 +446,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://freetvbox.ml/api/XBiubiu/kdys.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_biubiu_555电影",
@@ -457,7 +457,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://freetvbox.ml/api/XBiubiu/555电影.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
     {
       "key": "csp_biubiu_橘子tv",
@@ -468,7 +468,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://freetvbox.ml/api/XBiubiu/juzi.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
     {
@@ -480,7 +480,7 @@
       "quickSearch":1,
       "filterable":0,
       "ext":"https://freetvbox.ml/api/XBiubiu/茶杯狐.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
 {"key":"csp_AppYsV2","name": "🚁优众","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "http://121.205.88.178:8090/xgapp.php/v2/"},
@@ -497,7 +497,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMacFilter/jubaibai.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
     {
@@ -509,7 +509,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://freetvbox.ml/api/XBiubiu/宝仙HD.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
     },
 
 
@@ -522,7 +522,7 @@
       "quickSearch":1,
       "filterable":0,
       "ext":"https://freetvbox.ml/api/Xpath/wanmeikk.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -534,7 +534,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathFilter/cokemv.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -546,7 +546,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathFilter/libvio.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -558,7 +558,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMacFilter/Gimy.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -570,7 +570,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathFilter/zxzj.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
@@ -582,7 +582,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://freetvbox.ml/api/XPathMacFilter/dadagui.json",
-"jar": "https://freetvbox.ml/api/jar/custom_spider.jar;md5;d63fe3db21b48e04884c2d5303907bd1"
+"jar": "https://freetvbox.ml/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"
 
     },
     {
