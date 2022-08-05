@@ -94,7 +94,7 @@
       "quickSearch": 1,
       "filterable": 1,
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
     {
       "key": "csp_hbys〔SP〕",
@@ -106,7 +106,7 @@
       "filterable": 1,
       "ext": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IklEIjoyNTU5OSwiQ3JlYXRlZEF0IjoiMjAyMi0wNy0xN1QwOTo1OTowMy43MzIrMDg6MDAiLCJVcGRhdGVkQXQiOiIyMDIyLTA3LTE3VDA5OjU5OjAzLjczMiswODowMCIsIkRlbGV0ZWRBdCI6bnVsbCwidXNlcl9lbWFpbCI6ImppYW55aW5nOTk5QHFxLmNvbSIsInVzZXJfbmFtZSI6IiIsInVzZXJfcHdkIjoiIiwidXNlcl9pZCI6IjA1NzRiMzAyLTc5MzUtNGFlZi1hOTBkLTFlZjdjMTU3Y2U2MyIsInVzZXJfYW5zd2VyIjoiIiwibG9ja19pcyI6IkZhbHNlIiwiaXNfdHYiOiIiLCJpc19hZG1pbiI6IkZhbHNlIiwicmVnX3RpbWUiOm51bGwsInJlZ19rZXkiOiIiLCJ0dl90aW1lIjpudWxsLCJ0dl9rZXkiOiIifSwiZXhwIjoxNjU5MjQwNzQzLCJpc3MiOiJBbGZyZWRvIE1lbmRvemEifQ.xB1ZZAaYwrkyLF8bD1KyQKC2tmW0myIZgUQvTVQWELk",
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
     {
       "key": "酷猫",
@@ -117,7 +117,7 @@
       "quickSearch": 1,
       "filterable": 1,
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
 
     {
@@ -283,7 +283,7 @@
       "quickSearch": 1,
       "filterable": 0,
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
 
     {
@@ -295,10 +295,10 @@
       "quickSearch": 1,
       "filterable": 1,
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
     {
-      "key": "3EDY",
+      "key": "3EDY（EXO）T",
       "name": "🍉3EDY(EXO)",
       "type": 3,
       "api": "csp_EEEDY",
@@ -306,7 +306,7 @@
       "quickSearch": 1,
       "filterable": 1,
         "jar": 
-"https://freetvbox.ml/api/jar/custom_spider_0803.jar;md5;7a7e8073d59022b0de11aa135c60b05f"
+"https://freetvbox.ml/api/jar/custom_spider_0805.jar;md5;2fa165c9aa72ada6ab74a3dedb58ff6b"
     },
     {
       "key": "Gitcafe",
