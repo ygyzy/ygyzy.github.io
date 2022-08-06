@@ -642,7 +642,12 @@
 
 
 
-      {"key":"诺讯资源","name":"🏠诺讯资源                   (官)","type":1,"api":"http://caiji.nxflv.com/api.php/provide/vod/","searchable":1,"quickSearch":1,
+      {"key":"诺讯资源",
+      "name":"🏠诺讯资源 〔官〕",
+      "type":1,
+      "api":"http://caiji.nxflv.com/api.php/provide/vod/",
+      "searchable":1,
+      "quickSearch":1,
       "filterable": 0,
       "categories": [
         "国产剧",
