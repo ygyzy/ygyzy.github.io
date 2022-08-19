@@ -1,0 +1,11 @@
+"drives": [ 
+#<---以下为alist无需密码需插件--->#
+ {
+    "name":"晴园alist",
+    "plugin":"alist"https://52qy.repl.co/",
+    "userName":"",
+    "password":"",
+    "type":"plugin"
+    }
+
+    ],
