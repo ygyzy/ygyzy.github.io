@@ -1,8 +1,86 @@
-"drives": [ 
-#<---以下为alist无需密码需插件--->#
- {
+"drives": [
+
+#<---以下为Webdav挂载需用户名密码--->#
+
+
+    {
+    "name":"随便1",
+    "server":"http://***/dav/",
+    "userName":"***",
+    "password":"***",
+    "type":"webdav"},
+
+     {
+    "name":"随便2",
+    "server":"http://***/dav/",
+    "userName":"***",
+    "password":"***",
+    "type":"webdav"},
+
+
+#<---以下为手机搭建Webdav挂载需用户名密码--->#
+
+    {
+    "name":"随便",
+    "server":"http://ip8080:",      //内网挂载服务端ip
+    "userName":"admin",
+    "password":"admin",
+    "type":"webdav"},
+
+
+
+#<---以下为阿里云盘--->#
+    {
+    "name":"随便",
+
+    "password":"自己或他人token",
+    "type":"alidrive"},
+
+#<---以下为smb--->#
+
+
+    {
+    "name":"随便",
+
+    "server":"0.0.0.0/共享目录名",  //0.0.0.0位局域网共享设备ip地址
+    "userName":"",
+    "password":"",
+    "type":"samba"},
+
+
+     {
+    "name":"随便",
+
+    "server":"0.0.0.0/共享目录名",  //0.0.0.0位局域网共享设备ip地址，如果有多个共享目录，建议指定
+    "userName":"",
+    "password":"",
+    "type":"samba"},
+
+
+#<---以下为alist无需密码需插件,需内测版本--->#
+   {
     "name":"晴园alist",
     "plugin":"alist"https://52qy.repl.co/",
+    "userName":"",
+    "password":"",
+    "type":"plugin"
+     },
+
+
+    {
+    "name":"老王alist",
+    "plugin":"alist",
+    "server":"https://share.laowang.me/",
+    "userName":"",
+    "password":"",
+    "type":"plugin"
+    },
+
+
+    {
+    "name":"Youte",
+    "plugin":"alist",
+    "server":"https://alist.youte.ml/",
     "userName":"",
     "password":"",
     "type":"plugin"
