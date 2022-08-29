@@ -35,7 +35,14 @@
   "lives": [
     {
       "group": "redirect",
-      "channels": [
+      "channels": [{
+          "name": "redirect",
+          "urls": [
+            "proxy://do=live&type=txt&ext=txt"
+          ]
+        }
+      ]
+    }
   ],
 
 
