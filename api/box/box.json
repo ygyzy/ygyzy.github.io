@@ -140,12 +140,9 @@
 {"key":"AliPS","name":"盘搜","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/token.json"},
 {"key":"zhaozy","name":"找资源","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/token.json"},
 {"key":"push_agent","name":"推送","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://ygyzy.github.io/api/box/token.json"},
-{"key":"Alist","name":"Alist(仅支持tvbox官版q仓)","type":3,"api":"csp_Alist","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/Alist.json"},
+{"key":"Alist","name":"Alist(仅支持tvbox官版q仓)","type":3,"api":"csp_Alist","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/Alist.json"}
 
 
-#<---XPath--->#
-{"key":"csp_xpath_kuqimv","name":"🎤酷奇MV(XP)","type":3,"api":"csp_XPath","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://ygyzy.github.io/api/box/kuqimv.json"},
-{"key":"csp_xpath_yinfans","name":"🌀音范丝(磁力链)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/yinfans.json"}
 
  ],
 
