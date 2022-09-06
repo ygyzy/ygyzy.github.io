@@ -3,6 +3,11 @@ clan://localhost/目录名/alist/alist.txt
 
 说明：目录名=根目录时为空
 
+alist多网盘接口
+
+网络接口：
+
+https://ygyzy.github.io/api/alist.m3u8
 
 
 本地包
