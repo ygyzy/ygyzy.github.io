@@ -143,7 +143,7 @@
 {"key":"zhaozy","name":"找资源","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/token.json"},
 {"key":"push_agent","name":"推送","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://ygyzy.github.io/api/box/token.json"},
 {"key":"Alist","name":"Alist(仅支持官版q仓)","type":3,"api":"csp_Alist","searchable":1,"quickSearch":1,"filterable":1,
-"ext":"https://ygyzy.github.io/api/box/Alist.json",},
+"ext":"https://ygyzy.github.io/api/box/Alist.json"},
 
 
 #<---XPath--->#
