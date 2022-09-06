@@ -1,9 +1,10 @@
 
 {
+#<---壁纸--->#
 "wallpaper": "https://picsum.photos/1280/720/?blur=10",
 
    
-
+#<---主jar--->#
 "spider": "https://ygyzy.github.io/api/box/custom_spider.jar",
 
 #<----------head-------->#
@@ -112,7 +113,9 @@
 
   "sites": [
 
-#<--------------------->#
+#<---爬虫--->#
+#<---数据来源：https://gitea.com/Pandora2277/Box（长老库0904）--->#
+
 
 {"key":"360","name":"360","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"Kunyu77","name":"七七","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
@@ -140,13 +143,13 @@
 {"key":"Alist","name":"Alist(仅支持tvbox官版q仓)","type":3,"api":"csp_Alist","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/Alist.json"},
 
 
-
+#<---XPath--->#
 {"key":"csp_xpath_kuqimv","name":"🎤酷奇MV(XP)","type":3,"api":"csp_XPath","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://ygyzy.github.io/api/box/kuqimv.json"},
 {"key":"csp_xpath_yinfans","name":"🌀音范丝(磁力链)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/box/yinfans.json"}
 
  ],
 
-
+#<---直播--->#
   "lives": [
     {
       "group": "redirect",
@@ -193,7 +196,7 @@
 
 
     {
-    "name":"smb",
+    "name":"smb（示例不可用）",
 
     "server":"127.0.0.1/Download",         
 
@@ -402,7 +405,7 @@
 
  
 
-#<----------------->#
+#<--------解析-------->#
 
 
   
