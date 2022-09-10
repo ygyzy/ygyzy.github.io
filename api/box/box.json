@@ -105,8 +105,8 @@
 // 字幕格式 (可选)
 "subtitle": {"color": "#FF0000", "size": "30"},
 
-//浏览器首页
-"homepage": "https://ytsite.aqingyuan.repl.co/https/m.youtube.com"，
+//默认浏览器首页
+"homepage":"https://ytsite.aqingyuan.repl.co/https/www.youtube.com/",
 
 
 
