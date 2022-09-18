@@ -3,7 +3,7 @@
 
    
 
-"spider": "https://ygyzy.github.io/api/alist/alist3.jar;md5;1f965f241f8cbad920316e2f7511c739",
+"spider": "https://ygyzy.github.io/api/alist/alist.jar;md5;1f965f241f8cbad920316e2f7511c739",
 
 
 #<----------------head------------------->
