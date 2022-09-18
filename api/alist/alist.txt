@@ -3,7 +3,7 @@
 
    
 
-"spider": "https://ygyzy.github.io/api/alist/alist3.jar;md5;731f058e618912002ef4d9a5bf39e3bd",
+"spider": "https://ygyzy.github.io/api/alist/alist3.jar;md5;1f965f241f8cbad920316e2f7511c739",
 
 
 #<----------------head------------------->
@@ -13,17 +13,25 @@
 
 #<--------------------->#
 
+{"key":"csp_SP360",
+"name":"📺360(SP)",
+"type":3,
+"api":"csp_SP360",
+"searchable":1,
+"quickSearch":1,
+"filterable":1},
 
-    {
-      "key": "csp_Alist3",
-      "name": "🅿Alist网盘(SP)",
-      "type": 3,
-      "api": "csp_Alist3",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "https://ygyzy.github.io/api/alist/🅿Alist网盘.json"
-        }
+
+{
+"key": "csp_Alist3",
+"name": "🅿Alist网盘(SP)",
+"type": 3,
+"api": "csp_Alist",
+"searchable": 1,
+"quickSearch": 1,
+"filterable": 0,
+"ext": "https://ygyzy.github.io/api/alist/🅿Alist网盘.json"
+ }
 
 
 
@@ -72,8 +80,23 @@
       "type": 2,
       "url": "Sequence"
     }
+
+
+{"name":"GGTV搜集","type":1,"url":"https://play.fuqizhishi.com/juhe/API.php?appkey=caijijuhe220902&url="},
+
+{"name":"GGTV自用","type":1,"url":"https://play.fuqizhishi.com/jx/API.php?appkey=xiaobai888&url="},
+
+{"name": "keyu","type": 1,"url": "http://newjiexi.gotka.top/keyu3.php?url=",
+"ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],
+"header": {"User-Agent": "okhttp/4.1.0"}}}, 
+
+{"name":"fositv","type":1,"url":"https://play.fositv.com/?url="}
   ],
  
+"flags":["youku","qq","QQ","iqiyi","qiyi","letv","sohu","tudou","pptv","PPTV","mgtv","ltnb","rx","CL4K","xfyun","wuduzy","wasu","bilibili","renrenmi","xmm","xigua","m1905 ","funshion ","优酷","芒果","腾讯","爱奇艺","奇艺","哔哩哔哩","哔哩"],
+
+
+
   "ijk": [
     {
       "group": "软解码",
