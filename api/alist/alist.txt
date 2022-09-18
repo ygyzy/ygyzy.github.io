@@ -88,12 +88,11 @@
 
 {"name": "keyu","type": 1,"url": "http://newjiexi.gotka.top/keyu3.php?url=",
 "ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],
-"header": {"User-Agent": "okhttp/4.1.0"}}}, 
+"header": {"User-Agent": "okhttp/4.1.0"}}},
 
-{"name":"fositv","type":1,"url":"https://play.fositv.com/?url="}
+
   ],
  
-"flags":["youku","qq","QQ","iqiyi","qiyi","letv","sohu","tudou","pptv","PPTV","mgtv","ltnb","rx","CL4K","xfyun","wuduzy","wasu","bilibili","renrenmi","xmm","xigua","m1905 ","funshion ","优酷","芒果","腾讯","爱奇艺","奇艺","哔哩哔哩","哔哩"],
 
 
 
