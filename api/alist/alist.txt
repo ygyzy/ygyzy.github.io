@@ -39,7 +39,7 @@
       "channels": [{
           "name": "redirect",
           "urls": [
-            "proxy://do=live&type=txt&ext=aHR0cHM6Ly/mmbTlm63lpJbpk74u6L2755uYLk1MLzA5MTgvdHYudHh0Cg=="
+            "proxy://do=live&type=txt&ext=aHR0cHM6Ly95Z3l6eS5naXRodWIuaW8vYXBpL2JveC9saXZlLnR4dA=="
           ]
         }
       ]
