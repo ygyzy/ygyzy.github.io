@@ -3,7 +3,7 @@
 
    
 
-"spider": "clan://alist/alist.jar",
+"spider": "https://ygyzy.github.io/api/alist/alist3.jar;md5;731f058e618912002ef4d9a5bf39e3bd",
 
 
 #<----------------head------------------->
@@ -15,14 +15,14 @@
 
 
     {
-      "key": "csp_alist",
-      "name": "🐠alist(SP)",
+      "key": "csp_Alist3",
+      "name": "🅿Alist网盘(SP)",
       "type": 3,
-      "api": "csp_Alist",
+      "api": "csp_Alist3",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "ext": "晴园的宝藏库$https://alist.52qy.repl.co#一只鱼$https://alist.youte.ml#Audlt.Drive$https://drive.9t.ee#讯维云盘$https://pan.xwbeta.com#神族九帝$https://alist.shenzjd.com#姬路白雪の资源小站$https://pan.jlbx.xyz#七米蓝$https://al.chirmyram.com"
+      "ext": "https://ygyzy.github.io/api/alist/🅿Alist网盘.json"
         }
 
 
@@ -38,7 +38,7 @@
       "channels": [{
           "name": "redirect",
           "urls": [
-            "proxy://do=live&type=txt&ext=txt"
+            "proxy://do=live&type=txt&ext=aHR0cHM6Ly/mmbTlm63lpJbpk74u6L2755uYLk1MLzA5MTgvdHYudHh0Cg=="
           ]
         }
       ]
