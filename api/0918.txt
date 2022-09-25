@@ -9,7 +9,7 @@
 
 
 
-"spider":"https://晴园外链.轻盘.ML/0918/jar/jar0918.jar;md5;89a367a21768e46bc528b6ecf735e1b3",
+"spider":"https://ygyzy.github.io/api/jar/qy.jar;md5;6dfec6607119bdd0eafea5da58d0bb96",
 
 "wallpaper":"https://晴园外链.轻盘.ML/wallpapers",
 //"wallpaper":"https://外链.轻盘.ML/wallpapers",
@@ -30,7 +30,7 @@
 
 {"key":"csp_KanSJ","name":"🗽看视界","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1},
 
-{"key":"csp_GitCafe","name":"📜纸条(SP)","type":3,"api":"csp_Gitcafe","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext": "7bb5b24ca3274ad781a6071082e9eebd"},
+{"key":"csp_GitCafe","name":"📜纸条(SP)","type":3,"api":"csp_Gitcafe","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext": "7969124e7a4e4ccfb994db1a0e580be4"},
 
 
 {"key":"csp_kuaikan","name":"👀快看(SP)","type":3,"api":"csp_Kuaikan","playerType":1,"searchable":1,"quickSearch":1,"filterable":1},
@@ -64,21 +64,21 @@
 
 {"key": "T4","name": "🐞豆瓣荐片(T4桉)","type": 4,"api": "https://t4.secan.icu/vod?sites=all&timeout=7","searchable": 1,"quickSearch": 1,"filterable": 1},
 
-{"key":"t4public","name":"T4公共","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=7bb5b24ca3274ad781a6071082e9eebd&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
+{"key":"t4public","name":"T4公共","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=7969124e7a4e4ccfb994db1a0e580be4&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
 
 
-{"key":"csp_Alist1","name":"🅿Alist网盘","type":3,"api":"csp_Alist","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://晴园外链.轻盘.ML/0918/json/🅿Alist网盘.json"},	
+{"key":"csp_Alist1","name":"🅿Alist网盘","type":3,"api":"csp_Alist","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://ygyzy.github.io/api/alist/🅿Alist网盘.json"},	
 
 
 
 
-{"key":"Yisou","name":"😺易搜(搜索)","type":3,"api":"csp_Yiso","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7bb5b24ca3274ad781a6071082e9eebd"},
+{"key":"Yisou","name":"😺易搜(搜索)","type":3,"api":"csp_Yiso","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7969124e7a4e4ccfb994db1a0e580be4"},
 
-{"key":"csp_Alips","name":"😺喵搜(搜索)","type":3,"api":"csp_AliPS","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7bb5b24ca3274ad781a6071082e9eebd"},
+{"key":"csp_Alips","name":"😺喵搜(搜索)","type":3,"api":"csp_AliPS","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7969124e7a4e4ccfb994db1a0e580be4"},
 
-{"key":"Zhaozy","name":"😺找资源(搜索)","type":3,"api":"csp_Zhaozy","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7bb5b24ca3274ad781a6071082e9eebd"},
+{"key":"Zhaozy","name":"😺找资源(搜索)","type":3,"api":"csp_Zhaozy","playerType":1,"searchable":1,"quickSearch":1,"filterable":0,"ext": "7969124e7a4e4ccfb994db1a0e580be4"},
 
-{"key":"push_agent","name":"🐱推送(云盘/磁力)","type":3,"api":"csp_PushAgent","playerType":1,"searchable":0,"quickSearch":0,"filterable":0,"ext":"7bb5b24ca3274ad781a6071082e9eebd"},
+{"key":"push_agent","name":"🐱推送(云盘/磁力)","type":3,"api":"csp_PushAgent","playerType":1,"searchable":0,"quickSearch":0,"filterable":0,"ext":"7969124e7a4e4ccfb994db1a0e580be4"},
 
 {"key":"csp_xpath_yinfans","name":"音范丝(磁力链)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://晴园外链.轻盘.ML/0918/json/音范丝(磁力链).json"},
 
