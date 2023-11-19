@@ -1,0 +1,1237 @@
+---
+proxy-providers-dingyue: &1
+  自用节点:
+    type: http
+    interval: 3600
+    path: 自用节点.yaml
+    url: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBam9ibVNnYUhYV1k3a2ptVkU1czhBZWFsLUZj.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 900
+
+proxy-providers-config:
+  proxy-providers-use: &3
+  - 自用节点
+
+self-build-airpots: &2
+- name: 自建节点1
+  type: vmess
+  server: 172.67.153.33
+  port: 443
+  uuid: 6c3f4186-d1af-3025-94c7-403dbf1bd82a
+  alterId: 1
+  cipher: auto
+  tls: true
+  servername: v2fly.samrt.website
+  udp: true
+- name: 自建节点2
+  type: ssr
+  server: 521agd.ngpxgd.xyz
+  port: '25103'
+  cipher: chacha20-ietf
+  password: guess
+  udp: true
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 90659:e0540a349f
+  obfs-param: ''
+mixed-port: 7890
+allow-lan: true
+tcp-concurrent: true
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+ipv6: false
+geox-url:
+  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb
+experimental:
+  ignore-resolve-fail: true
+dns:
+  enable: true
+  ipv6: false
+  use-hosts: true
+  enhanced-mode: redir-host
+  nameserver:
+  - 114.114.114.114
+  - 223.5.5.5
+  fallback:
+  - tls://8.8.8.8:853
+  - tls://1.1.1.1:853
+  - 202.181.224.2
+  - 208.67.222.222
+store-selected: true
+proxy-providers: *1
+proxies: *2
+proxy-groups:
+- name: "\U0001F680 节点选择"
+  type: select
+  use: *3
+  proxies:
+  - 最快
+  - PikPak
+  - OpenToken
+  - 最快SG
+  - 最快HK
+  - 最快US
+  - DIRECT
+  - 自建节点1
+  - 自建节点2
+- name: 最快
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 90
+  use: *3
+  proxies:
+  - 自建节点1
+  - 自建节点2
+- name: 最快US
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 90
+  use: *3
+  filter: "美国|US|\U0001F1FA\U0001F1F8"
+- name: 最快SG
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 90
+  use: *3
+  filter: "新加坡|狮城|SG|singapore|\U0001F1F8\U0001F1EC"
+- name: 最快HK
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 90
+  use: *3
+  filter: "香港|香江|Hong Kong|HK|\U0001F1ED\U0001F1F0"
+- name: 最快TW
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 90
+  use: *3
+  filter: "(?i)台湾|TW|Taiwan|\U0001F1F9\U0001F1FC"
+- name: OpenToken
+  type: select
+  use: *3
+  proxies:
+  - DIRECT
+- name: PikPak
+  type: select
+  use: *3
+  proxies:
+  - DIRECT
+- name: AU
+  type: select
+  use: *3
+  filter: "(?i)澳大利亚|悉尼|墨尔本|AU|ustralia|\U0001F1E6\U0001F1FA"
+- name: CA
+  type: select
+  use: *3
+  filter: "加拿大|CA|\U0001F1E8\U0001F1E6"
+- name: EU
+  type: select
+  use: *3
+  filter: 德国|法国|荷兰|意大利|西班牙|土耳其|挪威|瑞士|瑞典|爱尔兰|芬兰|丹麦|波兰|匈牙利|比利时|卢森堡|希腊|葡萄牙|奥地利|立陶宛|拉脱维亚|罗马尼亚|捷克
+- name: HK
+  type: select
+  use: *3
+  filter: "(?i)香港|香江|Hong Kong|HK|\U0001F1ED\U0001F1F0"
+  proxies:
+  - 最快HK
+- name: IN
+  type: select
+  use: *3
+  filter: "^(?i).*(印度(?!尼西亚)|India|IN(?!donesia)|\U0001F1EE\U0001F1F3)"
+- name: JP
+  type: select
+  use: *3
+  filter: "(?i)日本|JP|Japan|\U0001F1EF\U0001F1F5"
+- name: KR
+  type: select
+  use: *3
+  filter: "(?i)韩国|KR|Korea|\U0001F1F0\U0001F1F7"
+- name: RU
+  type: select
+  use: *3
+  filter: "(?i)俄罗斯|RU|Russia|\U0001F1F7\U0001F1FA"
+- name: SG
+  type: select
+  use: *3
+  filter: "(?i)新加坡|SG|Singapore|\U0001F1F8\U0001F1EC"
+  proxies:
+  - 最快SG
+- name: TW
+  type: select
+  use: *3
+  filter: "(?i)台湾|TW|Taiwan|\U0001F1F9\U0001F1FC"
+  proxies:
+  - 最快TW
+- name: UK
+  type: select
+  use: *3
+  filter: "(?i)英国|UK|London|\U0001F1EC\U0001F1E7"
+- name: US
+  type: select
+  use: *3
+  filter: "(?i)美国|加利福利亚|纽约|得克萨斯|佛罗里达|华盛顿|俄勒冈|US|\U0001F1FA\U0001F1F8"
+  proxies:
+  - 最快US
+- name: 东南亚
+  type: select
+  use: *3
+  filter: "马来西亚|泰国|菲律宾|越南|印度尼西亚|\U0001F1F2\U0001F1FE|\U0001F1EE\U0001F1E9|\U0001F1F9\U0001F1ED|\U0001F1FB\U0001F1F3|\U0001F1F5\U0001F1ED"
+  proxies:
+  - SG
+- name: 其它
+  type: select
+  use: *3
+  filter: 巴基斯坦|以色列|新西兰|阿联酋|南非|哈萨克斯坦|乌克兰|埃及|阿根廷|墨西哥|巴西|沙特
+- name: "\U0001F5A7 CDN"
+  type: select
+  proxies:
+  - PASS
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F4BE Microsoft"
+  type: select
+  proxies:
+  - DIRECT
+  - HK
+  - US
+  - SG
+  - TW
+- name: "⚽ Google"
+  type: select
+  proxies:
+  - HK
+  - US
+  - SG
+  - JP
+  - TW
+- name: "\U0001F492 YOUTUBE"
+  type: select
+  proxies:
+  - 最快
+  - HK
+  - SG
+  - JP
+  - TW
+  - US
+- name: "\U0001F525 NETFLIX"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F310 PrimeVideo"
+  type: select
+  proxies:
+  - US
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - SG
+  - UK
+  - 东南亚
+  - 其它
+- name: "\U0001F4FA Disney"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F4E0 Telegram"
+  type: select
+  proxies:
+  - HK
+  - US
+  - JP
+  - SG
+  - TW
+- name: "\U0001F34E Apple_TV"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F34E Apple"
+  type: select
+  proxies:
+  - DIRECT
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F4FA Stream Media"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+  - "\U0001F680 节点选择"
+- name: "\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F55E 测速"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+  - "\U0001F680 节点选择"
+- name: "\U0001F3AE 游戏"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F916 ChatGPT"
+  type: select
+  proxies:
+  - AU
+  - CA
+  - EU
+  - HK
+  - IN
+  - JP
+  - KR
+  - RU
+  - SG
+  - TW
+  - UK
+  - US
+  - 东南亚
+  - 其它
+- name: "\U0001F9F0 开发网站"
+  type: select
+  proxies:
+  - US
+  - EU
+  - HK
+  - JP
+  - SG
+  - TW
+  - UK
+rule-providers:
+  ads_extra规则:
+    type: http
+    behavior: classical
+    url: http://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+    path: "./ads_extra"
+    interval: 3600
+  应用广告规则:
+    behavior: classical
+    type: http
+    url: http://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
+    path: "./BanProgramAD.yaml"
+    interval: 3600
+  GoogleFCM:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Google_FCM
+    behavior: classical
+    path: "./Google_FCM"
+    interval: 3600
+  Google规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Google
+    behavior: classical
+    path: "./Google"
+    interval: 3600
+  Microsoft规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Microsoft
+    behavior: classical
+    path: "./Microsoft"
+    interval: 3600
+  PrimeVideo规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/PrimeVideo
+    behavior: classical
+    path: "./PrimeVideo"
+    interval: 3600
+  Disney规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Disney_Plus
+    behavior: classical
+    path: "./Disney_Plus"
+    interval: 3600
+  Telegram规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Telegram
+    behavior: classical
+    path: "./Telegram"
+    interval: 3600
+  Apple_TV规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Apple_TV
+    behavior: classical
+    path: "./Apple_TV"
+    interval: 3600
+  Apple规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Apple
+    behavior: classical
+    path: "./Apple"
+    interval: 3600
+  Youtube规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/YouTube
+    behavior: classical
+    path: "./YouTube"
+    interval: 3600
+  测速规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/Speedtest
+    behavior: classical
+    path: "./Speedtest"
+    interval: 3600
+  ChatGPT规则:
+    type: http
+    url: http://clash.xiaoya.pro/rule_provider/OpenAI
+    behavior: classical
+    path: "./ChatGPT"
+    interval: 3600
+rules:
+- DOMAIN-SUFFIX,sky.com,EU
+- DOMAIN-SUFFIX,skygo.co.nz,EU
+- DOMAIN-SUFFIX,skygo.co.uk,EU
+- DOMAIN-SUFFIX,skygo.com,EU
+- DOMAIN-SUFFIX,skyshowtime.com,EU
+- DOMAIN-SUFFIX,dkskyn6tqnjvs.cloudfront.net,EU
+- DOMAIN-SUFFIX,eu-central-1.aws.cloud.es.io,EU
+- DOMAIN-SUFFIX,peacocktv.com,EU
+- DOMAIN-SUFFIX,cssott.com,EU
+- DOMAIN,skyshowtimeuk.data.adobedc.net,EU
+- DOMAIN-KEYWORD,skyshowtime,EU
+- DOMAIN,cws.conviva.com,EU
+- DOMAIN-SUFFIX,au,AU
+- DOMAIN-KEYWORD,australia-,AU
+- DOMAIN-KEYWORD,9now,AU
+- DOMAIN-KEYWORD,10play,AU
+- DOMAIN-KEYWORD,7plus,AU
+- DOMAIN-KEYWORD,csm-e-c,AU
+- DOMAIN-SUFFIX,7livecloud.io,AU
+- DOMAIN-SUFFIX,npc-live-sevennetwork.akamaized.net,AU
+- DOMAIN-SUFFIX,9now.com.au,AU
+- DOMAIN-SUFFIX,9now-livestreams.akamaized.net,AU
+- DOMAIN-KEYWORD,ap-southeast-2.amazonaws.com,AU
+- DOMAIN-SUFFIX,p-9now.akamaized.net,AU
+- DOMAIN-SUFFIX,tls1.yospace.com,AU
+- DOMAIN-SUFFIX,share.9cdn.net,AU
+- DOMAIN-SUFFIX,vms-tv-images-prod.s3-ap-southeast-2.amazonaws.com,AU
+- DOMAIN-SUFFIX,nine.com.au,AU
+- DOMAIN-SUFFIX,static9.net.au,AU
+- DOMAIN-SUFFIX,cx0vi.publishers.tremorhub.com,AU
+- DOMAIN-SUFFIX,10play.com.au,AU
+- DOMAIN-SUFFIX,d3szt4pzf.global.ssl.fastly.net,AU
+- DOMAIN-SUFFIX,7plus.com.au,AU
+- DOMAIN-SUFFIX,7plus-sevennetwork.akamaized.net,AU
+- DOMAIN-SUFFIX,sbs.com.au,AU
+- DOMAIN-SUFFIX,abc.net.au,AU
+- DOMAIN-SUFFIX,sbsod.com,AU
+- DOMAIN-SUFFIX,docplay.com,AU
+- DOMAIN-SUFFIX,sbsvoddai-vh.akamaihd.net,AU
+- DOMAIN-SUFFIX,sbsvodns-vh.akamaihd.net,AU
+- DOMAIN-SUFFIX,videocdn-sbs.akamaized.net,AU
+- DOMAIN-SUFFIX,sbs.demdex.net,AU
+- DOMAIN-SUFFIX,sbs-vod-prod-01.akamaized.net,AU
+- DOMAIN-SUFFIX,sbs-live-prod-01.akamaized.net,AU
+- DOMAIN-SUFFIX,secure-au.imrworldwide.com,AU
+- DOMAIN-SUFFIX,cdn-gl.imrworldwide.com,AU
+- DOMAIN-SUFFIX,b800410803a4659ffcd7b9b6577a907110b7aa21.cws.conviva.com,AU
+- DOMAIN-SUFFIX,cdn-gl.imrworldwide.com,AU
+- DOMAIN-SUFFIX,s0.2mdn.net,AU
+- DOMAIN-SUFFIX,ib.adnxs.com,AU
+- DOMAIN-SUFFIX,sbslive.akamaized.net,AU
+- DOMAIN-SUFFIX,sbsaustralia.sc.omtrdc.net,AU
+- DOMAIN-SUFFIX,deliver.oztam.com.au,AU
+- DOMAIN-SUFFIX,ds-aksb-a.akamaihd.net,AU
+- DOMAIN-SUFFIX,a-fds.youborafds01.com,AU
+- DOMAIN-SUFFIX,iview-vod.akamaized.net,AU
+- DOMAIN-KEYWORD,abc-iview,AU
+- DOMAIN-SUFFIX,0fg8d.publishers.tremorhub.com,AU
+- DOMAIN-SUFFIX,sbsod.com,AU
+- DOMAIN-SUFFIX,nexus.ensighten.com,AU
+- DOMAIN-SUFFIX,mobile-collector.newrelic.com,US
+- DOMAIN-SUFFIX,newrelic.com,AU
+- DOMAIN-SUFFIX,au1.gigya.com,AU
+- DOMAIN-SUFFIX,bam.nr-data.net,AU
+- DOMAIN-SUFFIX,cdn.branch.io,AU
+- DOMAIN-SUFFIX,api2.branch.ioo,AU
+- DOMAIN-SUFFIX,link.theplatform.com,AU
+- DOMAIN-SUFFIX,swm.digital,AU
+- IP-CIDR,18.65.168.32/24,AU,no-resolve
+- IP-CIDR,13.55.236.229/24,AU,no-resolve
+- DOMAIN-KEYWORD,europe-,UK
+- DOMAIN-KEYWORD,bbcfmt,UK
+- DOMAIN-KEYWORD,uk-live,UK
+- DOMAIN-SUFFIX,uk,UK
+- DOMAIN-SUFFIX,eu,UK
+- DOMAIN-SUFFIX,ftchinese.com,UK
+- DOMAIN-SUFFIX,acorn.tv,UK
+- DOMAIN-SUFFIX,d2z3p34itxwaj7.cloudfront.net,UK
+- DOMAIN-SUFFIX,d349g9zuie06uo.cloudfront.net,UK
+- DOMAIN-SUFFIX,britbox.co.uk,UK
+- DOMAIN-SUFFIX,v.fastcdn.co,UK
+- DOMAIN-SUFFIX,raygun.io,UK
+- DOMAIN-SUFFIX,raygun.com,UK
+- DOMAIN-SUFFIX,itvpnp.live.ott.irdeto.com,UK
+- DOMAIN-SUFFIX,braze.eu,UK
+- DOMAIN-SUFFIX,launches.appsflyer.com,UK
+- DOMAIN-SUFFIX,geolocation.onetrust.com,UK
+- DOMAIN-SUFFIX,cdn.cookielaw.org,UK
+- DOMAIN-SUFFIX,bbci.co,UK
+- DOMAIN-SUFFIX,bbc.co,UK
+- DOMAIN-SUFFIX,bbcworldwidetv.com,UK
+- DOMAIN-SUFFIX,bbc.co.uk,UK
+- DOMAIN-SUFFIX,bbc.net.uk,UK
+- DOMAIN-SUFFIX,bbc.com,UK
+- DOMAIN-SUFFIX,bbci.co.uk,UK
+- DOMAIN-SUFFIX,bidi.net.uk,UK
+- DOMAIN-SUFFIX,bbcverticals.com,UK
+- DOMAIN-SUFFIX,bbcnews.com,UK
+- DOMAIN-SUFFIX,bbcstudios.com,UK
+- DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,UK
+- DOMAIN-SUFFIX,bb-static.com,UK
+- DOMAIN-SUFFIX,bbcfmt,UK
+- DOMAIN-SUFFIX,bbctvapps.co.uk,UK
+- DOMAIN-SUFFIX,urbanairship.com,UK
+- DOMAIN-SUFFIX,itv.com,UK
+- DOMAIN-SUFFIX,itv.co.uk,UK
+- DOMAIN-SUFFIX,http-inputs-itv.splunkcloud.com,UK
+- DOMAIN-SUFFIX,api-itv-hub.conductrics.com,UK
+- DOMAIN-SUFFIX,massive-itv.com,UK
+- DOMAIN-SUFFIX,bilsyndication.com,UK
+- DOMAIN-SUFFIX,channel4.com,UK
+- DOMAIN-SUFFIX,cdn-pci.optimizely.com,UK
+- DOMAIN-SUFFIX,c4assets.com,UK
+- DOMAIN-SUFFIX,ipv6.cws.conviva.com,UK
+- DOMAIN-SUFFIX,static.vliplatform.com,UK
+- DOMAIN-SUFFIX,2a7e9.v.fwmrm.net,UK
+- DOMAIN-SUFFIX,p.videologygroup.com,UK
+- DOMAIN-SUFFIX,2356e.v.fwmrm.net,UK
+- DOMAIN-SUFFIX,itvquiz.com,UK
+- DOMAIN-SUFFIX,itvtextsanta.com,UK
+- DOMAIN-SUFFIX,possessedtv.com,UK
+- DOMAIN-SUFFIX,starsintheireyes.com,UK
+- DOMAIN-SUFFIX,granadatv.com,UK
+- DOMAIN-SUFFIX,itvplc.com,UK
+- DOMAIN-SUFFIX,3sixtymedia.com,UK
+- DOMAIN-SUFFIX,americanownews.com,UK
+- DOMAIN-SUFFIX,itvboxoffice.com,UK
+- DOMAIN-SUFFIX,itvmedia.co.uk,UK
+- DOMAIN-SUFFIX,tlsbus.com,UK
+- DOMAIN-SUFFIX,itvstatic.com,UK
+- DOMAIN-SUFFIX,channel5.com,UK
+- DOMAIN-SUFFIX,mtvnetworks.tt.omtrdc.net,UK
+- DOMAIN-SUFFIX,a-fds.youborafds01.com,UK
+- DOMAIN-SUFFIX,my5.tv,UK
+- DOMAIN-SUFFIX,uktv.co.uk,UK
+- DOMAIN-SUFFIX,linwd.net,UK
+- DOMAIN-SUFFIX,sky.com,UK
+- DOMAIN-SUFFIX,skynews.com,UK
+- DOMAIN-SUFFIX,skymedia.co.uk,UK
+- DOMAIN-SUFFIX,nowtv.com,UK
+- DOMAIN-SUFFIX,bskyb.demdex.net,UK
+- DOMAIN-SUFFIX,myvisualiq.net,UK
+- DOMAIN-SUFFIX,videologygroup.com,UK
+- DOMAIN-SUFFIX,discoveryplus.co.uk,UK
+- DOMAIN-SUFFIX,toots-a.akamaihd.net,UK
+- DOMAIN-SUFFIX,itvpnpmobile-a.akamaihd.net,UK
+- DOMAIN-SUFFIX,aod-dash-uk-live.akamaized.net,UK
+- DOMAIN-SUFFIX,aod-hls-uk-live.akamaized.net,UK
+- DOMAIN-SUFFIX,vod-dash-uk-live.akamaized.net,UK
+- DOMAIN-SUFFIX,vod-thumb-uk-live.akamaized.net,UK
+- DOMAIN-SUFFIX,vod-dash-ww-live.akamaized.net,UK
+- DOMAIN-SUFFIX,vod-thumb-ww-live.akamaized.net,UK
+- DOMAIN-SUFFIX,vod-dash-ww-live.bbcfmt.s.llnwi.net,UK
+- DOMAIN-SUFFIX,vod-thumb-ww-live.bbcfmt.s.llnwi.net,UK
+- DOMAIN-SUFFIX,eu-west-2.amazonaws.com,UK
+- DOMAIN-SUFFIX,vs-hls-pushb-uk-live.akamaized.net,UK
+- DOMAIN-SUFFIX,dwamdstream102.akamaized.net,US
+- DOMAIN-KEYWORD,us-west,US
+- DOMAIN-KEYWORD,us-east,US
+- DOMAIN-KEYWORD,us-south,US
+- DOMAIN-KEYWORD,us-north,US
+- DOMAIN-KEYWORD,us-central,US
+- DOMAIN-KEYWORD,us1-prod-,US
+- DOMAIN-SUFFIX,hbo.com,US
+- DOMAIN-SUFFIX,hbomax.com,US
+- DOMAIN-SUFFIX,maxgo.com,US
+- DOMAIN-SUFFIX,cmaf.cf.us.hbomaxcdn.com,US
+- DOMAIN-SUFFIX,cmaf.lv3.us.hbomaxcdn.com,US
+- DOMAIN-SUFFIX,hbomaxcdn.com,US
+- DOMAIN-SUFFIX,cinemax.com,US
+- DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,US
+- DOMAIN-SUFFIX,fxnetworks.com,US
+- DOMAIN-SUFFIX,idagio.com,US
+- DOMAIN-SUFFIX,qobuz.com,US
+- DOMAIN-SUFFIX,tubi.com,US
+- DOMAIN-SUFFIX,tubitv.com,US
+- DOMAIN-SUFFIX,tubi.tv,US
+- DOMAIN-SUFFIX,tubi.video,US
+- DOMAIN-SUFFIX,adrise.tv,US
+- DOMAIN-SUFFIX,digitalcertvalidation.com,US
+- DOMAIN-SUFFIX,ocsp.digicert.com,US
+- DOMAIN-SUFFIX,phicdn.net,US
+- DOMAIN-SUFFIX,streamlock.net,US
+- DOMAIN-SUFFIX,stirr.com,US
+- DOMAIN-SUFFIX,sinclairstoryline.com,US
+- DOMAIN-SUFFIX,britbox.com,US
+- DOMAIN-SUFFIX,britbox.takeoffmedia.com,US
+- DOMAIN-SUFFIX,d2z3p34itxwaj7.cloudfront.net,US
+- DOMAIN-SUFFIX,via.placeholder.com,US
+- DOMAIN-SUFFIX,vod-dash-ntham-comm-live.akamaized.net,US
+- DOMAIN-SUFFIX,vod-sub-ww-live.akamaized.net,US
+- DOMAIN-SUFFIX,analytics-ingress-global.bitmovin.com,US
+- DOMAIN-SUFFIX,vod-thumb-ntham-comm-live.akamaized.net,US
+- DOMAIN-SUFFIX,vcccd.edu,US
+- DOMAIN-SUFFIX,tunein.com,US
+- DOMAIN-SUFFIX,tune.mx,US
+- DOMAIN-SUFFIX,radiotime.com,US
+- DOMAIN-SUFFIX,tunein.streamguys1.com,US
+- DOMAIN-SUFFIX,worldwidewsheradio.com,US
+- DOMAIN-SUFFIX,gospel108.com,US
+- DOMAIN-SUFFIX,smoothjazztampabay.com,US
+- DOMAIN-SUFFIX,nexitally.com,US
+- DOMAIN-SUFFIX,cnn.com,US
+- DOMAIN-SUFFIX,cnn.io,US
+- DOMAIN-SUFFIX,cnn.it,US
+- DOMAIN-SUFFIX,cnnarabic.com,US
+- DOMAIN-SUFFIX,cnnlabs.com,US
+- DOMAIN-SUFFIX,cnnmoney.ch,US
+- DOMAIN-SUFFIX,spectrum.s3.amazonaws.com,US
+- DOMAIN-SUFFIX,anymind360.com,US
+- DOMAIN-SUFFIX,bcbolt446c5271-a.akamaihd.net,US
+- DOMAIN-SUFFIX,bcovlive-a.akamaihd.net,US
+- DOMAIN-SUFFIX,filters.adtidy.org,US
+- DOMAIN-SUFFIX,rarbg.to,US
+- DOMAIN-SUFFIX,mypianku.net,US
+- DOMAIN-SUFFIX,bunediy.com,US
+- DOMAIN-SUFFIX,token.im,US
+- DOMAIN-SUFFIX,112263.com,US
+- DOMAIN-SUFFIX,hulu.hb.omtrdc.net,US
+- DOMAIN-SUFFIX,hulu.sc.omtrdc.net,US
+- DOMAIN-SUFFIX,cws-hulu.conviva.com,US
+- DOMAIN-SUFFIX,callhulu.com,US
+- DOMAIN-SUFFIX,findyourlimits.com,US
+- DOMAIN-SUFFIX,forthethrone.com,US
+- DOMAIN-SUFFIX,sho.com,US
+- DOMAIN-SUFFIX,showtime.com,US
+- DOMAIN-SUFFIX,flashtalking.com,US
+- DOMAIN-SUFFIX,kapang.com,US
+- DOMAIN-SUFFIX,freehulu.com,US
+- DOMAIN-SUFFIX,hooloo.tv,US
+- DOMAIN-SUFFIX,hoolu.com,US
+- DOMAIN-SUFFIX,hoolu.tv,US
+- DOMAIN-SUFFIX,hu1u.com,US
+- DOMAIN-SUFFIX,huloo.cc,US
+- DOMAIN-SUFFIX,huloo.tv,US
+- DOMAIN-SUFFIX,hulu.com,US
+- DOMAIN-SUFFIX,hulu.tv,US
+- DOMAIN-SUFFIX,hulu.us,US
+- DOMAIN-SUFFIX,huluaction.com,US
+- DOMAIN-SUFFIX,huluad.com,US
+- DOMAIN-SUFFIX,huluapp.com,US
+- DOMAIN-SUFFIX,huluasks.com,US
+- DOMAIN-SUFFIX,hulucall.com,US
+- DOMAIN-SUFFIX,hulufree.com,US
+- DOMAIN-SUFFIX,hulugans.com,US
+- DOMAIN-SUFFIX,hulugermany.com,US
+- DOMAIN-SUFFIX,hulugo.com,US
+- DOMAIN-SUFFIX,huluim.com,US
+- DOMAIN-SUFFIX,huluinstantmessenger.com,US
+- DOMAIN-SUFFIX,huluitaly.com,US
+- DOMAIN-SUFFIX,hulunet.com,US
+- DOMAIN-SUFFIX,hulunetwork.com,US
+- DOMAIN-SUFFIX,huluplus.com,US
+- DOMAIN-SUFFIX,hulupremium.com,US
+- DOMAIN-SUFFIX,hulupurchase.com,US
+- DOMAIN-SUFFIX,huluqa.com,US
+- DOMAIN-SUFFIX,hulurussia.com,US
+- DOMAIN-SUFFIX,huluspain.com,US
+- DOMAIN-SUFFIX,hulusports.com,US
+- DOMAIN-SUFFIX,hulustream.com,US
+- DOMAIN-SUFFIX,huluteam.com,US
+- DOMAIN-SUFFIX,hulutv.com,US
+- DOMAIN-SUFFIX,huluusa.com,US
+- DOMAIN-SUFFIX,joinmaidez.com,US
+- DOMAIN-SUFFIX,mushymush.tv,US
+- DOMAIN-SUFFIX,myhulu.com,US
+- DOMAIN-SUFFIX,originalhulu.com,US
+- DOMAIN-SUFFIX,payhulu.com,US
+- DOMAIN-SUFFIX,registerhulu.com,US
+- DOMAIN-SUFFIX,thehulubraintrust.com,US
+- DOMAIN-SUFFIX,wwwhuluplus.com,US
+- DOMAIN-SUFFIX,nr-data.net,US
+- DOMAIN-SUFFIX,newrelic.com,US
+- DOMAIN-SUFFIX,evidon.com,US
+- DOMAIN-SUFFIX,qualtrics.com,US
+- DOMAIN-SUFFIX,discoveryplus.com,US
+- DOMAIN-SUFFIX,sciencechannel.com,US
+- DOMAIN-SUFFIX,dnitv.com,US
+- DOMAIN-SUFFIX,discovery.com,US
+- DOMAIN-SUFFIX,disco-api.com,US
+- DOMAIN-SUFFIX,prod-realmservice.mercury.dnitv.com,US
+- DOMAIN-SUFFIX,p.typekit.net,US
+- DOMAIN-SUFFIX,use.typekit.net,US
+- DOMAIN-SUFFIX,logx.optimizely.com,US
+- DOMAIN-SUFFIX,fandango.com,US
+- DOMAIN-SUFFIX,roku.com,US
+- DOMAIN-KEYWORD,roku,US
+- DOMAIN-SUFFIX,rokutime.com,US
+- DOMAIN-SUFFIX,vudu.com,US
+- DOMAIN-SUFFIX,fubo.tv,US
+- DOMAIN-SUFFIX,fubotv.com,US
+- DOMAIN-SUFFIX,js-agent.newrelic.com,US
+- DOMAIN,d1v5ir2lpwr8os.cloudfront.net,US
+- DOMAIN,d22qjgkvxw22r6.cloudfront.net,US
+- DOMAIN,d25xi40x97liuc.cloudfront.net,US
+- DOMAIN,d27xxe7juh1us6.cloudfront.net,US
+- DOMAIN,dmqdd6hw24ucf.cloudfront.net,US
+- DOMAIN-KEYWORD,avoddashs,US
+- DOMAIN-SUFFIX,aiv-cdn.net,US
+- DOMAIN-SUFFIX,aiv-delivery.net,US
+- DOMAIN-SUFFIX,avodmp4s3ww-a.akamaihd.net,US
+- DOMAIN-KEYWORD,xn--jlq480n2rg,US
+- DOMAIN-SUFFIX,xumo.tv,US
+- DOMAIN-SUFFIX,xumo.com,US
+- DOMAIN-SUFFIX,redbox.com,US
+- DOMAIN-SUFFIX,wurl.tv,US
+- DOMAIN-SUFFIX,wurl.com,US
+- DOMAIN-SUFFIX,amagi.tv,US
+- DOMAIN-SUFFIX,crackle.com,US
+- DOMAIN-SUFFIX,peacocktv.com,US
+- DOMAIN-SUFFIX,sling.com,US
+- DOMAIN-SUFFIX,directv.com,US
+- DOMAIN-SUFFIX,history.com,US
+- DOMAIN-SUFFIX,pluto.tv,US
+- DOMAIN-SUFFIX,plutotv.net,US
+- DOMAIN-SUFFIX,natgeotv.com,US
+- DOMAIN-KEYWORD,pluto,US
+- DOMAIN-KEYWORD,stirr,US
+- DOMAIN-SUFFIX,nationalgeographic.com,US
+- DOMAIN-SUFFIX,pbs.org,US
+- DOMAIN-SUFFIX,pbskids.org,US
+- DOMAIN-SUFFIX,magellantv.com,US
+- DOMAIN-SUFFIX,cstatic.net,US
+- DOMAIN-SUFFIX,curbed.com,US
+- DOMAIN-SUFFIX,eater.com,US
+- DOMAIN-SUFFIX,funnyordie.com,US
+- DOMAIN-SUFFIX,meridian.net,US
+- DOMAIN-SUFFIX,polygon.com,US
+- DOMAIN-SUFFIX,racked.com,US
+- DOMAIN-SUFFIX,recode.net,US
+- DOMAIN-SUFFIX,sbnation.com,US
+- DOMAIN-SUFFIX,theverge.com,US
+- DOMAIN-SUFFIX,vox-cdn.com,US
+- DOMAIN-SUFFIX,vox.com,US
+- DOMAIN-SUFFIX,voxcreative.com,US
+- DOMAIN-SUFFIX,voxfieldguide.com,US
+- DOMAIN-SUFFIX,voxmedia.com,US
+- DOMAIN-SUFFIX,voxops.net,US
+- DOMAIN-SUFFIX,manifest.prod.boltdns.net,US
+- DOMAIN-SUFFIX,abc.com,US
+- DOMAIN-SUFFIX,amctv.com,US
+- DOMAIN-SUFFIX,beinsportsconnect.net,US
+- DOMAIN-SUFFIX,beinsportsconnect.tv,US
+- DOMAIN-SUFFIX,cbs.com,US
+- DOMAIN-SUFFIX,cwtv.com,US
+- DOMAIN-SUFFIX,fox.com,US
+- DOMAIN-SUFFIX,uplynk.com,US
+- DOMAIN-SUFFIX,foxdcg.com,US
+- DOMAIN-SUFFIX,foxnews.com,US
+- DOMAIN-SUFFIX,foxnews.net,US
+- DOMAIN-SUFFIX,foxnews.org,US
+- DOMAIN-SUFFIX,foxnews.tv,US
+- DOMAIN-SUFFIX,foxnews.cc,US
+- DOMAIN-SUFFIX,fox.tv,US
+- DOMAIN-SUFFIX,fox247.com,US
+- DOMAIN-SUFFIX,foxnewsaffiliates.com,US
+- DOMAIN-SUFFIX,foxnewsaroundtheworld.com,US
+- DOMAIN-SUFFIX,foxnewsb2b.com,US
+- DOMAIN-SUFFIX,foxnewschannel.com,US
+- DOMAIN-SUFFIX,foxnewsgo.net,US
+- DOMAIN-SUFFIX,foxnewsgo.org,US
+- DOMAIN-SUFFIX,foxnewsgo.tv,US
+- DOMAIN-SUFFIX,foxnewsnetwork.com,US
+- DOMAIN-SUFFIX,foxnewsradio.com,US
+- DOMAIN-SUFFIX,mtv.com,US
+- DOMAIN-SUFFIX,mtvnservices.com,US
+- DOMAIN-SUFFIX,nbc.com,US
+- DOMAIN-SUFFIX,nbcuni.com,US
+- DOMAIN-SUFFIX,wsj.com,US
+- DOMAIN-SUFFIX,wsj.net,US
+- DOMAIN-SUFFIX,nytimes.com,US
+- DOMAIN-SUFFIX,haystack.tv,US
+- DOMAIN-SUFFIX,haystacknews.com,US
+- DOMAIN-SUFFIX,p16-tiktokcdn-com.akamaized.net,US
+- DOMAIN-SUFFIX,ibytedtos.com,US
+- DOMAIN-SUFFIX,ibyteimg.com,US
+- DOMAIN-SUFFIX,ipstatp.com,US
+- DOMAIN-SUFFIX,muscdn.com,US
+- DOMAIN-SUFFIX,musical.ly,US
+- DOMAIN-SUFFIX,sgpstatp.com,US
+- DOMAIN-SUFFIX,vice.com,US
+- DOMAIN-SUFFIX,byteoversea.com,US
+- DOMAIN-SUFFIX,ibytedtos.com,US
+- DOMAIN-SUFFIX,ipstatp.com,US
+- DOMAIN-SUFFIX,tiktok.com,US
+- DOMAIN-SUFFIX,tik-tokapi.com,US
+- DOMAIN-SUFFIX,tiktokcdn.com,US
+- DOMAIN-SUFFIX,tiktokv.com,US
+- DOMAIN-KEYWORD,-tiktokcdn-com,US
+- IP-CIDR,35.186.224.47/32,US
+- DOMAIN,content.jwplatform.com,US
+- DOMAIN,videos-f.jwpsrv.com,US
+- DOMAIN-SUFFIX,meijutt.tv,US
+- DOMAIN-SUFFIX,quora.com,US
+- DOMAIN-SUFFIX,quicktake.video,US
+- DOMAIN-KEYWORD,bloomberg,US
+- DOMAIN-SUFFIX,deezer.com,US
+- DOMAIN-SUFFIX,tve-live-lln.warnermediacdn.com,US
+- "DOMAIN-SUFFIX,metrics.brightcove.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,edge.api.brightcove.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,players.brightcove.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,jsdelivr.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,braze.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,fastly.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,conviva.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,cdn.optimizely.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,dpm.demdex.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,nd.demdex.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,vjs.zencdn.net,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,cdnjs.cloudflare.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,licensing.bitmovin.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,ocsp.sca1b.amazontrust.com,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,open.live.bbc.co.uk,\U0001F5A7 CDN"
+- "DOMAIN-SUFFIX,crwdcntrl.net,\U0001F5A7 CDN"
+- DOMAIN-SUFFIX,sg,SG
+- DOMAIN-SUFFIX,zaobao.com,SG
+- DOMAIN-SUFFIX,zaobao.com.sg,SG
+- DOMAIN-SUFFIX,zaobao.sg,SG
+- DOMAIN-SUFFIX,mewatch.sg,SG
+- DOMAIN-SUFFIX,mediacorp.sg,SG
+- DOMAIN-SUFFIX,mediacorptv.com,SG
+- DOMAIN-SUFFIX,mediacorp.sc.omtrdc.net,SG
+- DOMAIN-SUFFIX,sb.scorecardresearch.com,SG
+- DOMAIN-SUFFIX,secure-sg.imrworldwide.com,SG
+- DOMAIN-KEYWORD,infinity-c,SG
+- DOMAIN-SUFFIX,k-toggle.akamaized.net,SG
+- DOMAIN-SUFFIX,tglmp02.akamaized.net,SG
+- DOMAIN-SUFFIX,tglmp01.akamaized.net,SG
+- DOMAIN-SUFFIX,sea01.hls.live-video.net,SG
+- DOMAIN-SUFFIX,sea02.hls.live-video.net,SG
+- DOMAIN-SUFFIX,kaltura.com,SG
+- DOMAIN-SUFFIX,hk,HK
+- DOMAIN-SUFFIX,imgur.com,HK
+- DOMAIN-SUFFIX,tvb.com,HK
+- DOMAIN-SUFFIX,mytvsuper.com,HK
+- DOMAIN-SUFFIX,mytvsuperlimited.hb.omtrdc.net,HK
+- DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net,HK
+- DOMAIN-SUFFIX,bigbigchannel.com.hk,HK
+- DOMAIN-SUFFIX,bigbigshop.com,HK
+- DOMAIN-SUFFIX,tvbeventpower.com.hk,HK
+- DOMAIN-SUFFIX,tvbweekly.com,HK
+- DOMAIN-KEYWORD,rthklive,HK
+- DOMAIN-KEYWORD,nowtv100,HK
+- DOMAIN-SUFFIX,viu.tv,HK
+- DOMAIN-SUFFIX,viu.com,HK
+- DOMAIN-KEYWORD,viutv,HK
+- DOMAIN-SUFFIX,viu.now.com,HK
+- DOMAIN-SUFFIX,goallpayx.com,HK
+- DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com,HK
+- DOMAIN-SUFFIX,now-tv.com,HK
+- DOMAIN-SUFFIX,nowe.com,HK
+- DOMAIN-SUFFIX,nowestatic.com,HK
+- DOMAIN-SUFFIX,nowe.hk,HK
+- DOMAIN-SUFFIX,now.com,HK
+- DOMAIN-SUFFIX,now.com.hk,HK
+- DOMAIN-SUFFIX,now-ashare.com,HK
+- DOMAIN-SUFFIX,jwpcdn.com,HK
+- DOMAIN-SUFFIX,jwplayer.com,HK
+- DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,HK
+- DOMAIN-SUFFIX,tidal.com,HK
+- DOMAIN-SUFFIX,tidalhifi.com,HK
+- DOMAIN-SUFFIX,wimpmusic.com,HK
+- DOMAIN-SUFFIX,potato.im,HK
+- DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,HK
+- DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,HK
+- DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,HK
+- DOMAIN-SUFFIX,hboasia.com,HK
+- DOMAIN-SUFFIX,hbogoasia.com,HK
+- DOMAIN-SUFFIX,hbogoasia.hk,HK
+- DOMAIN-KEYWORD,hbogoasia,HK
+- DOMAIN-SUFFIX,hbogo.com,HK
+- DOMAIN-SUFFIX,hbonow.com,HK
+- DOMAIN-SUFFIX,youboranqs01.com,HK
+- DOMAIN-SUFFIX,ap-southeast-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,ap-east-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,hbogeo.cust.footprint.net,HK
+- DOMAIN-SUFFIX,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net,HK
+- DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net,HK
+- DOMAIN-SUFFIX,dai3fd1oh325y.cloudfront.net,HK
+- DOMAIN-SUFFIX,hboasia1-i.akamaihd.net,HK
+- DOMAIN-SUFFIX,hboasia2-i.akamaihd.net,HK
+- DOMAIN-SUFFIX,hboasia3-i.akamaihd.net,HK
+- DOMAIN-SUFFIX,hboasia4-i.akamaihd.net,HK
+- DOMAIN-SUFFIX,hboasia5-i.akamaihd.net,HK
+- DOMAIN-SUFFIX,hboasialive.akamaized.net,HK
+- DOMAIN-SUFFIX,hbogoprod-vod.akamaized.net,HK
+- DOMAIN-SUFFIX,hbolb.onwardsmg.com,HK
+- DOMAIN-SUFFIX,api-hboprod.onwardsmg.com,HK
+- DOMAIN-SUFFIX,hbounify-prod.evergent.com,HK
+- DOMAIN-SUFFIX,nft.huobi.co.za,HK
+- DOMAIN-SUFFIX,openapi.webull.com,HK
+- DOMAIN-SUFFIX,s3-ap-southeast-1.amazonaws.com,HK
+- DOMAIN-SUFFIX,maxcdn.bootstrapcdn.com,HK
+- DOMAIN-SUFFIX,d5hpy42637ggu.cloudfront.net,HK
+- DOMAIN-SUFFIX,nowe-other-qa.s3.amazonaws.com,HK
+- DOMAIN-SUFFIX,hboomgprod.evergent.com,HK
+- DOMAIN-SUFFIX,huobi.com,HK
+- DOMAIN-SUFFIX,huobicfg.s3.amazonaws.com,HK
+- DOMAIN-SUFFIX,hbfile.net,HK
+- DOMAIN-SUFFIX,hbabit.com,HK
+- DOMAIN-SUFFIX,hkix.net,HK
+- DOMAIN-SUFFIX,aljazeera.com,HK
+- DOMAIN-SUFFIX,in,IN
+- DOMAIN-SUFFIX,hotstar.com,IN
+- DOMAIN-SUFFIX,zee5.com,IN
+- DOMAIN-SUFFIX,sonyliv.com,IN
+- DOMAIN-SUFFIX,ndtv.com,IN
+- DOMAIN-SUFFIX,indiatvnews.com,IN
+- DOMAIN-SUFFIX,indiatimes.com,IN
+- DOMAIN-SUFFIX,india.com,IN
+- DOMAIN-SUFFIX,news18.com,IN
+- DOMAIN-SUFFIX,cnnnews18-lh.akamaihd.net,IN
+- DOMAIN-SUFFIX,starplus.com,IN
+- "DOMAIN-SUFFIX,fast.com,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,flxvpn.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,netflix.ca,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,netflix.com,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,netflix.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,netflixinvestor.com,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflxso.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflxext.com,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflximg.com,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflximg.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflxsearch.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,nflxvideo.net,\U0001F525 NETFLIX"
+- "DOMAIN-SUFFIX,netflix.com.edgesuite.net,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,netflix,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,nflx,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,netflixdnstest,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,dualstack.apiproxy-,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-,\U0001F525 NETFLIX"
+- "DOMAIN-KEYWORD,dualstack.ichnaea-web-,\U0001F525 NETFLIX"
+- "IP-CIDR,23.246.0.0/18,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,45.57.0.0/17,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,64.120.128.0/17,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,66.197.128.0/17,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,108.175.32.0/20,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,192.173.64.0/18,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,198.38.96.0/19,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,198.45.48.0/20,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,8.41.4.0/24,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,69.53.224.0/19,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,207.45.72.0/22,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,208.75.76.0/22,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,37.77.184.0/21,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,185.2.220.0/22,\U0001F525 NETFLIX,no-resolve"
+- "IP-CIDR,185.9.188.0/22,\U0001F525 NETFLIX,no-resolve"
+- DOMAIN-SUFFIX,tw,TW
+- DOMAIN-SUFFIX,tw.youtube.com,TW
+- DOMAIN-SUFFIX,tw.news.yahoo.com,TW
+- DOMAIN-SUFFIX,whatismyipaddress.com,TW
+- DOMAIN-SUFFIX,wfuapp.com,TW
+- DOMAIN-SUFFIX,4gtv.tv,TW
+- DOMAIN-SUFFIX,kktv.me,TW
+- DOMAIN-SUFFIX,litv.tv,TW
+- DOMAIN-SUFFIX,hinet.net,TW
+- DOMAIN-SUFFIX,linetv.tw,TW
+- DOMAIN-SUFFIX,line.me,TW
+- DOMAIN-SUFFIX,catchplay.com,TW
+- DOMAIN-SUFFIX,kkbox.com,TW
+- DOMAIN-SUFFIX,kkbox.com.tw,TW
+- DOMAIN-SUFFIX,kk.stream,TW
+- DOMAIN-SUFFIX,kktv.com.tw,TW
+- DOMAIN-SUFFIX,kktv.me,TW
+- DOMAIN-SUFFIX,asiaplay-origin.s3.amazonaws.com,TW
+- DOMAIN-SUFFIX,tra-ww000-cp.akamaized.net,TW
+- DOMAIN-SUFFIX,ols-ww000-cp.akamaized.net,TW
+- DOMAIN-SUFFIX,ols-ww100-cp.akamaized.net,TW
+- DOMAIN-SUFFIX,dkfhw9rzsr80z.cloudfront.net,TW
+- DOMAIN-SUFFIX,wfuapp.com,TW
+- DOMAIN-SUFFIX,twix.net,TW
+- DOMAIN-SUFFIX,ru,RU
+- DOMAIN-SUFFIX,okko.tv,RU
+- DOMAIN-SUFFIX,yandex.ru,RU
+- DOMAIN-SUFFIX,yandex.net,RU
+- DOMAIN-SUFFIX,rt.com,RU
+- DOMAIN-SUFFIX,rttv.ru,RU
+- DOMAIN-SUFFIX,rttv.com,RU
+- DOMAIN-SUFFIX,ruptly.tv,RU
+- DOMAIN-SUFFIX,ca,CA
+- DOMAIN-SUFFIX,cbclivedai9-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai8-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai7-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai6-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai5-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai4-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai3-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai2-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,cbclivedai1-i.akamaihd.net,CA
+- DOMAIN-SUFFIX,tvbanywhere.com,US
+- DOMAIN-SUFFIX,tvbanywherena.com,US
+- DOMAIN-SUFFIX,tvbanywhereplusna.com,US
+- DOMAIN-SUFFIX,encoretvb.com,US
+- DOMAIN,content.jwplatform.com,US
+- DOMAIN,videos-f.jwpsrv.com,US
+- DOMAIN,bcbolt446c5271-a.akamaihd.net,US
+- DOMAIN-SUFFIX,my,东南亚
+- DOMAIN-SUFFIX,id,东南亚
+- DOMAIN-SUFFIX,th,东南亚
+- DOMAIN-SUFFIX,vn,东南亚
+- DOMAIN-SUFFIX,ph,东南亚
+- DOMAIN-KEYWORD,asia-southeast,东南亚
+- DOMAIN-SUFFIX,iq.com,东南亚
+- DOMAIN-SUFFIX,qy.net,东南亚
+- DOMAIN-SUFFIX,inter.iqiyi.com,东南亚
+- DOMAIN-SUFFIX,intl-rcd.iqiyi.com,东南亚
+- DOMAIN-SUFFIX,intl-subscription.iqiyi.com,东南亚
+- DOMAIN-SUFFIX,intl.iqiyi.com,东南亚
+- DOMAIN-SUFFIX,shopee.co.id,东南亚
+- DOMAIN-SUFFIX,shopee.co.th,东南亚
+- DOMAIN-SUFFIX,shopee.com,东南亚
+- DOMAIN-SUFFIX,shopee.com.br,东南亚
+- DOMAIN-SUFFIX,shopee.com.my,东南亚
+- DOMAIN-SUFFIX,shopee.ph,东南亚
+- DOMAIN-SUFFIX,shopee.sg,东南亚
+- DOMAIN-SUFFIX,shopee.tw,东南亚
+- DOMAIN-SUFFIX,shopee.vn,东南亚
+- DOMAIN-SUFFIX,shopeemobile.com,东南亚
+- DOMAIN-SUFFIX,shp.ee,东南亚
+- DOMAIN-SUFFIX,staticcdn.enzymic.co,东南亚
+- DOMAIN-SUFFIX,cxense.com,东南亚
+- DOMAIN-SUFFIX,force.com,东南亚
+- DOMAIN-SUFFIX,loadm.exelator.com,东南亚
+- DOMAIN-SUFFIX,sync-tm.everesttech.net,东南亚
+- DOMAIN,d2e1asnsl7br7b.cloudfront.net,东南亚
+- IP-CIDR,3.1.237.0/24,东南亚,no-resolve
+- IP-CIDR,13.228.187.0/24,东南亚,no-resolve
+- IP-CIDR,13.224.250.0/24,东南亚,no-resolve
+- IP-CIDR,23.35.92.0/24,东南亚,no-resolve
+- IP-CIDR,162.247.242.0/24,东南亚,no-resolve
+- IP-CIDR,147.75.95.0/24,东南亚,no-resolve
+- IP-CIDR,151.101.1.0/24,东南亚,no-resolve
+- IP-CIDR,104.26.7.0/24,东南亚,no-resolve
+- IP-CIDR,112.64.218.0/24,东南亚,no-resolve
+- IP-CIDR,142.251.12.0/24,东南亚,no-resolve
+- IP-CIDR,13.33.96.0/24,东南亚,no-resolve
+- IP-CIDR,159.89.200.0/24,东南亚,no-resolve
+- DOMAIN-SUFFIX,de,EU
+- DOMAIN-SUFFIX,fr,EU
+- DOMAIN-SUFFIX,nl,EU
+- DOMAIN-SUFFIX,se,EU
+- DOMAIN-SUFFIX,it,EU
+- DOMAIN-SUFFIX,dk,EU
+- DOMAIN-SUFFIX,no,EU
+- DOMAIN-SUFFIX,be,EU
+- DOMAIN-SUFFIX,es,EU
+- DOMAIN-SUFFIX,fi,EU
+- DOMAIN-SUFFIX,ch,EU
+- DOMAIN-SUFFIX,pl,EU
+- DOMAIN-SUFFIX,cz,EU
+- DOMAIN-SUFFIX,ie,EU
+- DOMAIN-SUFFIX,Zattoo.tv,EU
+- DOMAIN-SUFFIX,Zattoo.com,EU
+- DOMAIN-SUFFIX,arte.tv,EU
+- DOMAIN-SUFFIX,zdfvod.akamaized.net,EU
+- DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net,EU
+- DOMAIN-SUFFIX,nrodlzdf-a.akamaihd.net,EU
+- DOMAIN-SUFFIX,cdn.bunchbox.co,EU
+- DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,EU
+- DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net,EU
+- DOMAIN-SUFFIX,cdn-gl.nmrodam.com,EU
+- DOMAIN-SUFFIX,dw.com,EU
+- DOMAIN-SUFFIX,mogenius.io,EU
+- DOMAIN-SUFFIX,kr,KR
+- DOMAIN-SUFFIX,jp,JP
+- IP-CIDR,8.8.8.8/32,HK,no-resolve
+- IP-CIDR,8.8.4.4/32,HK,no-resolve
+- IP-CIDR,1.1.1.1/32,HK,no-resolve
+- IP-CIDR,1.0.0.1/32,HK,no-resolve
+- IP-CIDR,208.67.222.222/32,HK,no-resolve
+- IP-CIDR,202.181.224.2/32,HK,no-resolve
+- IP-CIDR,8.8.8.8/32,HK,no-resolve
+- IP-CIDR,8.8.4.4/32,HK,no-resolve
+- IP-CIDR,1.1.1.1/32,HK,no-resolve
+- IP-CIDR,1.0.0.1/32,HK,no-resolve
+- IP-CIDR,208.67.222.222/32,HK,no-resolve
+- IP-CIDR,202.181.224.2/32,HK,no-resolve
+- DOMAIN-SUFFIX,ide.goorm.io,DIRECT
+- DOMAIN-SUFFIX,run.goorm.io,DIRECT
+- DOMAIN-SUFFIX,ide-run.goorm.io,DIRECT
+- DOMAIN-SUFFIX,api.nn.ci,DIRECT
+- "RULE-SET,Microsoft规则,\U0001F4BE Microsoft"
+- RULE-SET,Google规则,⚽ Google
+- "RULE-SET,PrimeVideo规则,\U0001F310 PrimeVideo"
+- "RULE-SET,Disney规则,\U0001F4FA Disney"
+- "RULE-SET,Apple_TV规则,\U0001F34E Apple_TV"
+- "RULE-SET,Apple规则,\U0001F34E Apple"
+- "RULE-SET,Youtube规则,\U0001F492 YOUTUBE"
+- "RULE-SET,Telegram规则,\U0001F4E0 Telegram"
+- "GEOSITE,category-games,\U0001F3AE 游戏"
+- GEOSITE,category-games@cn,DIRECT
+- "GEOSITE,category-dev,\U0001F9F0 开发网站"
+- "GEOSITE,facebook,\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+- "GEOSITE,instagram,\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+- "GEOSITE,twitter,\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+- "GEOSITE,vk,\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+- "GEOSITE,linkedin,\U0001F9D1‍\U0001F91D‍\U0001F9D1 海外社交聊天"
+- "RULE-SET,ChatGPT规则,\U0001F916 ChatGPT"
+- RULE-SET,ads_extra规则,REJECT
+- RULE-SET,应用广告规则,REJECT
+- GEOSITE,category-ads-all,REJECT
+- DOMAIN-SUFFIX,xiaoya.pro,US
+- DOMAIN,access.mypikpak.com,SG
+- DOMAIN,api-drive.mypikpak.com,SG
+- DOMAIN-SUFFIX,mypikpak.com,PikPak
+- DOMAIN-SUFFIX,nn.ci,OpenToken
+- DOMAIN-SUFFIX,api.xhofe.top,OpenToken
+- GEOIP,PRIVATE,DIRECT,no-resolve
+- GEOSITE,geolocation-cn,DIRECT
+- GEOSITE,category-media-cn,DIRECT
+- GEOSITE,tencent,DIRECT
+- GEOSITE,netease,DIRECT
+- DOMAIN-SUFFIX,aliyundrive.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- GEOIP,CN,DIRECT
+- GEOIP,AU,AU
+- GEOIP,CA,CA
+- GEOIP,GB,UK
+- GEOIP,DE,EU
+- GEOIP,FR,EU
+- GEOIP,HK,HK
+- GEOIP,TW,TW
+- GEOIP,SG,SG
+- GEOIP,IN,IN
+- GEOIP,RU,RU
+- GEOIP,JP,JP
+- GEOIP,KR,KR
+- GEOIP,US,US
+- "MATCH,\U0001F680 节点选择"
