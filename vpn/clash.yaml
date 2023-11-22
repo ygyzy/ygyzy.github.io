@@ -5,172 +5,164 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 晴园|中国|1, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|2, server: 120.232.177.232, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|3, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|4, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|5, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|6, server: 120.240.88.111, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|7, server: 120.232.177.232, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|8, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|9, server: 120.232.177.232, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|10, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|11, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|12, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|13, server: 120.240.88.111, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|14, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|15, server: 112.16.244.101, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|16, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|17, server: yd-03.paofunlink.com, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|18, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|19, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|20, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|21, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|22, server: 120.240.88.111, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|23, server: yd-03.paofunlink.com, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|24, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|25, server: bs3.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|26, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|27, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|28, server: tg_mfbpn_y6.52vpn.eu.org, port: 45883, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ded.usa03.ladderspeed.top}, udp: true}
-  - {name: 晴园|中国|29, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|30, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|31, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|32, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|33, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|34, server: tg_mfbpn_y6.52vpn.eu.org, port: 10085, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: pro.usa07.ladderspeed.top}, udp: true}
-  - {name: 晴园|中国|35, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|36, server: 120.240.88.111, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|37, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|38, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|39, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|40, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|41, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|42, server: 120.240.88.111, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|43, server: 120.232.177.232, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|44, server: 120.232.177.232, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|45, server: 112.16.244.108, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|46, server: 120.240.88.111, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|47, server: 120.240.88.111, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|48, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|49, server: 120.240.88.111, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|50, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|51, server: yd-02.paofunlink.com, port: 1082, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|52, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|53, server: tg_mfbpn_y4.52vpn.eu.org, port: 20212, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hk01-v2.ladderlink.top}, udp: true}
-  - {name: 晴园|中国|54, server: yd-02.paofunlink.com, port: 1080, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|55, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|56, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|57, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|58, server: 120.240.88.111, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|59, server: 112.16.244.101, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|60, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|61, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|62, server: 120.240.88.111, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|匈牙利|63, server: 109.61.80.225, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 晴园|中国|64, server: yd-03.paofunlink.com, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|65, server: 112.16.244.108, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|66, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|67, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|68, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|69, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|70, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|71, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|72, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|73, server: 120.240.88.111, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|74, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|75, server: yd-02.paofunlink.com, port: 1080, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|76, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|77, server: tg_mfbpn_y6.52vpn.eu.org, port: 10088, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv12, ws-headers: {Host: pro.usa06.ladderspeed.top}, udp: true}
-  - {name: 晴园|中国|78, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|79, server: 120.232.177.232, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|80, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|81, server: 120.240.88.111, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|82, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|83, server: 120.240.88.111, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|84, server: yd-03.paofunlink.com, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|85, server: tg_mfbpn_y6.52vpn.eu.org, port: 10085, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv2, ws-headers: {Host: pro.usa08.ladderspeed.top}, udp: true}
-  - {name: 晴园|中国|86, server: yd-02.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|87, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|88, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|89, server: 112.16.244.101, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|90, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|91, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|92, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|法国|93, server: 54.36.174.181, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 晴园|中国|94, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|95, server: 112.16.244.101, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|96, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|97, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|98, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|99, server: 120.240.88.111, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|100, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|101, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|102, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|103, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|104, server: 120.240.88.111, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|105, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|106, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|107, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|108, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|109, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|110, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|111, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|112, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|113, server: yd-05.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|114, server: yd-03.paofunlink.com, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|115, server: yd-02.paofunlink.com, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|116, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|117, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|118, server: 125.124.196.171, port: 34524, type: ss, cipher: chacha20-ietf-poly1305, password: 531df32e-4691-444a-8f16-959c4843963d, udp: true}
-  - {name: 晴园|中国|119, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|中国|120, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 晴园|美国|121, server: free1.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
-  - {name: 晴园|中国|122, server: 120.241.47.4, port: 35518, type: ss, cipher: aes-256-gcm, password: 337ea1ee-80cd-4522-a160-16d6e276ede0, udp: true}
-  - {name: 晴园|土耳其|123, server: 193.46.56.210, port: 8443, type: vmess, uuid: b72694db-ed21-46c1-8923-325305fa787f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 晴园|美国|124, server: mxc3.lbuy.top, port: 8080, type: vmess, uuid: bdea260f-6fc7-4f29-9265-48947261be13, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/v?ed=2048", ws-headers: {Host: us.tashancloud.link}, udp: true}
-  - {name: 晴园|美国|125, server: skk.moe, port: 8080, type: vmess, uuid: bdea260f-6fc7-4f29-9265-48947261be13, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/v?ed=2048", ws-headers: {Host: us.tashancloud.link}, udp: true}
-  - {name: 晴园|中国|126, server: cm01.newcome.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|1, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|2, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|3, server: 120.240.88.111, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|4, server: 154.198.224.38, port: 56120, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/changding-tls1?ed=2048", ws-headers: {Host: hk-300.changding.tech}, udp: true}
+  - {name: 晴园|塞舌尔|5, server: 156.251.226.106, port: 1111, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/changding-tls0?ed=2048", ws-headers: {Host: hk-300.changding.tech}, udp: true}
+  - {name: 晴园|中国|6, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|7, server: 120.240.88.111, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|8, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|9, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|10, server: 120.240.88.111, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|11, server: yd-03.paofunlink.com, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|12, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|13, server: yd-02.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|14, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|15, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|16, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|17, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|18, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|19, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|20, server: yd-02.paofunlink.com, port: 1082, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|21, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|22, server: yd-02.paofunlink.com, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|23, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|24, server: 154.198.224.38, port: 56120, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: zjg.changding.tech}, udp: true}
+  - {name: 晴园|中国|25, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|26, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|27, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|28, server: 154.198.224.38, port: 56120, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: abzb.changding.tech}, udp: true}
+  - {name: 晴园|美国|29, server: Singapore.MFA.EE, port: 80, type: vmess, uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: buyvm.iiio.wiki}, udp: true}
+  - {name: 晴园|中国|30, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|31, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|32, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|33, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|34, server: 156.251.226.106, port: 1111, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/vm-tls0?ed=2048", ws-headers: {Host: teq.changding.tech}, udp: true}
+  - {name: 晴园|中国|35, server: tg_mfbpn_y6.52vpn.eu.org, port: 10088, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv12, ws-headers: {Host: pro.usa06.ladderspeed.top}, udp: true}
+  - {name: 晴园|中国|36, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|37, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|38, server: 112.16.244.101, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|39, server: 120.240.88.111, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|40, server: 120.232.177.232, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|41, server: 125.124.196.171, port: 34524, type: ss, cipher: chacha20-ietf-poly1305, password: 531df32e-4691-444a-8f16-959c4843963d, udp: true}
+  - {name: 晴园|中国|42, server: 120.240.88.111, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|43, server: 112.16.244.101, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|44, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|45, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|46, server: 120.240.88.111, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|47, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|48, server: yd-03.paofunlink.com, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|49, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|50, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|51, server: bs3.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|52, server: yd-02.paofunlink.com, port: 1080, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|53, server: 112.16.244.108, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|54, server: 120.232.177.232, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|55, server: yd-03.paofunlink.com, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|56, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|57, server: yd-05.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|58, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|59, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|60, server: yd-03.paofunlink.com, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|61, server: 154.198.224.38, port: 56120, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: de.changding.tech}, udp: true}
+  - {name: 晴园|中国|62, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|63, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|64, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|65, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|66, server: 120.232.177.232, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|67, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|68, server: 112.16.244.108, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|69, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|70, server: 120.240.88.111, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|71, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|72, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|73, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|74, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|75, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|76, server: cm01.newcome.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|77, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|法国|78, server: 54.36.174.181, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 晴园|中国|79, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|80, server: tg_mfbpn_y6.52vpn.eu.org, port: 10085, type: vmess, uuid: b2ddf5b3-77a4-30d4-a06f-5fdaead3b9ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: pro.usa07.ladderspeed.top}, udp: true}
+  - {name: 晴园|中国|81, server: 112.16.244.101, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|82, server: 112.16.244.108, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|83, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|84, server: yd-02.paofunlink.com, port: 1080, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|85, server: 112.16.244.108, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|86, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|87, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|88, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|89, server: 120.240.88.111, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|90, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|91, server: 120.240.88.111, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|92, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|93, server: 120.240.88.111, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|94, server: 120.240.88.111, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|95, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|塞舌尔|96, server: 154.198.224.38, port: 56120, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: shs.changding.tech}, udp: true}
+  - {name: 晴园|中国|97, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|98, server: 120.240.88.111, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|中国|99, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|100, server: bs3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|101, server: yd-03.paofunlink.com, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|102, server: 112.16.244.101, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|103, server: 112.16.244.108, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|104, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|105, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 199929:1023ATh_E, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|106, server: 120.240.88.111, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|107, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|加拿大|108, server: 51.222.26.159, port: 80, type: vmess, uuid: 65e5a838-fefb-4138-b0ae-13bdffd1fb4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess/, ws-headers: {Host: 51.222.26.159}, udp: true}
+  - {name: 晴园|美国|109, server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 56a00699-1857-46ac-a861-60d3c17e1b9f, sni: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 231122|晴园|110, server: 120.240.88.111, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|111, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|美国|112, server: 172.67.68.136, port: 80, type: vmess, uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: buyvm.iiio.wiki}, udp: true}
+  - {name: 晴园|美国|113, server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 5447cc07-b5bc-4ec0-b3aa-6f70335ae292, sni: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园|美国|114, server: free1.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
+  - {name: 231122|晴园|115, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 231122|晴园|116, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 277272:LzSb2q, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 晴园|美国|117, server: v1.583182.xyz, port: 2096, type: vmess, uuid: a70a44d5-c6f5-494c-a914-7964474cc2de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v1.583181.xyz}, udp: true}
+  - {name: 231122|晴园|118, server: 120.240.88.111, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -197,9 +189,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -214,7 +206,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -229,79 +221,71 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -328,9 +312,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -345,7 +329,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -360,80 +344,72 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -460,9 +436,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -477,7 +453,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -492,40 +468,32 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -544,40 +512,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -604,9 +572,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -621,7 +589,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -636,40 +604,32 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -680,40 +640,40 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -740,9 +700,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -757,7 +717,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -772,79 +732,71 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -871,9 +823,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -888,7 +840,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -903,80 +855,72 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -1003,9 +947,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -1020,7 +964,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -1035,40 +979,32 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1084,40 +1020,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 晴园|中国|1
+      - 231122|晴园|1
       - 晴园|中国|2
       - 晴园|中国|3
-      - 晴园|中国|4
-      - 晴园|中国|5
+      - 晴园|塞舌尔|4
+      - 晴园|塞舌尔|5
       - 晴园|中国|6
       - 晴园|中国|7
       - 晴园|中国|8
       - 晴园|中国|9
-      - 晴园|中国|10
-      - 晴园|中国|11
-      - 晴园|中国|12
-      - 晴园|中国|13
-      - 晴园|中国|14
-      - 晴园|中国|15
-      - 晴园|中国|16
-      - 晴园|中国|17
-      - 晴园|中国|18
-      - 晴园|中国|19
+      - 231122|晴园|10
+      - 231122|晴园|11
+      - 231122|晴园|12
+      - 231122|晴园|13
+      - 231122|晴园|14
+      - 231122|晴园|15
+      - 231122|晴园|16
+      - 231122|晴园|17
+      - 231122|晴园|18
+      - 231122|晴园|19
       - 晴园|中国|20
       - 晴园|中国|21
       - 晴园|中国|22
       - 晴园|中国|23
-      - 晴园|中国|24
+      - 晴园|塞舌尔|24
       - 晴园|中国|25
       - 晴园|中国|26
       - 晴园|中国|27
-      - 晴园|中国|28
-      - 晴园|中国|29
+      - 晴园|塞舌尔|28
+      - 晴园|美国|29
       - 晴园|中国|30
       - 晴园|中国|31
       - 晴园|中国|32
       - 晴园|中国|33
-      - 晴园|中国|34
+      - 晴园|塞舌尔|34
       - 晴园|中国|35
       - 晴园|中国|36
       - 晴园|中国|37
@@ -1144,9 +1080,9 @@ proxy-groups:
       - 晴园|中国|58
       - 晴园|中国|59
       - 晴园|中国|60
-      - 晴园|中国|61
+      - 晴园|塞舌尔|61
       - 晴园|中国|62
-      - 晴园|匈牙利|63
+      - 晴园|中国|63
       - 晴园|中国|64
       - 晴园|中国|65
       - 晴园|中国|66
@@ -1161,7 +1097,7 @@ proxy-groups:
       - 晴园|中国|75
       - 晴园|中国|76
       - 晴园|中国|77
-      - 晴园|中国|78
+      - 晴园|法国|78
       - 晴园|中国|79
       - 晴园|中国|80
       - 晴园|中国|81
@@ -1176,40 +1112,32 @@ proxy-groups:
       - 晴园|中国|90
       - 晴园|中国|91
       - 晴园|中国|92
-      - 晴园|法国|93
+      - 晴园|中国|93
       - 晴园|中国|94
       - 晴园|中国|95
-      - 晴园|中国|96
+      - 晴园|塞舌尔|96
       - 晴园|中国|97
       - 晴园|中国|98
       - 晴园|中国|99
-      - 晴园|中国|100
-      - 晴园|中国|101
-      - 晴园|中国|102
-      - 晴园|中国|103
-      - 晴园|中国|104
-      - 晴园|中国|105
-      - 晴园|中国|106
-      - 晴园|中国|107
-      - 晴园|中国|108
-      - 晴园|中国|109
-      - 晴园|中国|110
-      - 晴园|中国|111
-      - 晴园|中国|112
-      - 晴园|中国|113
-      - 晴园|中国|114
-      - 晴园|中国|115
-      - 晴园|中国|116
-      - 晴园|中国|117
-      - 晴园|中国|118
-      - 晴园|中国|119
-      - 晴园|中国|120
-      - 晴园|美国|121
-      - 晴园|中国|122
-      - 晴园|土耳其|123
-      - 晴园|美国|124
-      - 晴园|美国|125
-      - 晴园|中国|126
+      - 231122|晴园|100
+      - 231122|晴园|101
+      - 231122|晴园|102
+      - 231122|晴园|103
+      - 231122|晴园|104
+      - 231122|晴园|105
+      - 231122|晴园|106
+      - 231122|晴园|107
+      - 晴园|加拿大|108
+      - 晴园|美国|109
+      - 231122|晴园|110
+      - 231122|晴园|111
+      - 晴园|美国|112
+      - 晴园|美国|113
+      - 晴园|美国|114
+      - 231122|晴园|115
+      - 231122|晴园|116
+      - 晴园|美国|117
+      - 231122|晴园|118
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

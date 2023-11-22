@@ -5,95 +5,223 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 晴园•中国•1, server: 112.29.156.248, port: 63051, type: vmess, uuid: ad289fbf-0a41-3b61-877a-311b69dffdee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: cache-us-1.db-link02.top}, udp: true}
-  - {name: 晴园•美国•2, server: free1.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
-  - {name: 晴园•美国•3, server: lonan.globa.abc.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonsdgn, ws-headers: {Host: cadic.qkhbyf.tech}, udp: true}
-  - {name: 晴园•奥地利•4, server: lonan.europe.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonanhis, ws-headers: {Host: bx.133487.tech}, udp: true}
-  - {name: 晴园•中国•5, server: 112.29.156.251, port: 64005, type: vmess, uuid: ad289fbf-0a41-3b61-877a-311b69dffdee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-3.db-link02.top}, udp: true}
-  - {name: 晴园•塞浦路斯•6, server: csgo.com, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonanhis, ws-headers: {Host: bx.qkhbyf.tech}, udp: true}
-  - {name: 晴园•美国•7, server: sg.lonna.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: uscc.1145114.me}, udp: true}
-  - {name: 晴园•塞浦路斯•8, server: csgo.com, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasa, ws-headers: {Host: spl.133487.tech}, udp: true}
-  - {name: 晴园•美国•9, server: sg.lonna.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: uswu.1145114.me}, udp: true}
-  - {name: 晴园•美国•10, server: us.lonan.can.1145114.me, port: 80, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: vdsus.1145114.me}, udp: true}
-  - {name: 晴园•美国•11, server: sg.lonna.1145114.me, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasa, ws-headers: {Host: spl.133487.tech}, udp: true}
-  - {name: 晴园•美国•12, server: free2.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
-  - {name: 晴园•中国•13, server: 112.29.156.248, port: 61082, type: vmess, uuid: ad289fbf-0a41-3b61-877a-311b69dffdee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-2.db-link02.top}, udp: true}
-  - {name: 晴园•奥地利•14, server: lonan.europe.1145114.me, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasaasfa, ws-headers: {Host: est.44kk7t.tech}, udp: true}
-  - {name: 晴园•美国•15, server: xgtowbpone.yunjisuan.cf, port: 80, type: vmess, uuid: 69934991-1e7f-46fe-bf51-2fe1c79bcd8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xgtowbpone.yunjisuan.cf}, udp: true}
-  - {name: 晴园•香港•16, server: cmcu.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: frankfurt0001.qkhbyf.tech}, udp: true}
-  - {name: 晴园•美国•17, server: sg.lonna.1145114.me, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /91819299-acb0=c8d7d41d97xianyu, ws-headers: {Host: bx.1145114.me}, udp: true}
-  - {name: 晴园•奥地利•18, server: lonan.europe.1145114.me, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /91819299-acb0=c8d7d41d97xianyu, ws-headers: {Host: deabsjfbak.1145114.me}, udp: true}
+  - {name: 晴园•美国•1, server: sg.lonna.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: uscc.1145114.me}, udp: true}
+  - {name: 晴园•中国•2, server: 112.29.156.248, port: 63051, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: cache-us-1.db-link02.top}, udp: true}
+  - {name: 晴园•美国•3, server: chunkr.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: chunc.cxzntq.tech}, udp: true}
+  - {name: 晴园•中国•4, server: 112.29.156.248, port: 62006, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-2.db-link02.top}, udp: true}
+  - {name: 晴园•中国•5, server: 112.29.156.251, port: 62006, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-3.db-link01.top}, udp: true}
+  - {name: 晴园•美国•6, server: free3.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-jp.6114514.xyz}, udp: true}
+  - {name: 晴园•美国•7, server: free7.6114514.xyz, port: 2095, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-hk.6114514.xyz}, udp: true}
+  - {name: 晴园•韩国•8, server: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20252, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•韩国•9, server: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20252, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•10, server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•11, server: free8.6114514.xyz, port: 2095, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-hk.6114514.xyz}, udp: true}
+  - {name: 晴园•美国•12, server: bxxaaos.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasa, ws-headers: {Host: spl.133487.tech}, udp: true}
+  - {name: 晴园•台湾•13, server: tc12.twtc.dynu.net, port: 443, type: vmess, uuid: c22f08d7-a3d6-451e-8feb-9f7ea676c5d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vbub2, ws-headers: {Host: tc12.twtc.dynu.net}, udp: true}
+  - {name: 晴园•美国•14, server: free4.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-jp.6114514.xyz}, udp: true}
+  - {name: 晴园•美国•15, server: free6.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-sg.6114514.xyz}, udp: true}
+  - {name: 晴园•台湾•16, server: nbq13.ntbq.dynu.net, port: 443, type: vmess, uuid: c22f08d7-a3d6-451e-8feb-9f7ea676c5d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /b13, ws-headers: {Host: nbq13.ntbq.dynu.net}, udp: true}
+  - {name: 晴园•美国•17, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•奥地利•18, server: lonan.europe.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: jinyu.qkhbyf.tech}, udp: true}
+  - {name: 晴园•香港•19, server: cmcu.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonsdgn, ws-headers: {Host: ca001.cxzntq.tech}, udp: true}
+  - {name: 晴园•美国•20, server: ip.sb, port: 80, type: vmess, uuid: b2ef5495-e339-489c-af03-e1dbd486384c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jianjiao, ws-headers: {Host: test.jjynb.com}, udp: true}
+  - {name: 晴园•美国•21, server: bx.lonan.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /91819299-acb0=c8d7d41d97xianyu, ws-headers: {Host: bx.1145114.me}, udp: true}
+  - {name: 晴园•美国•22, server: indec.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasa, ws-headers: {Host: spl.133487.tech}, udp: true}
+  - {name: 晴园•美国•23, server: free1.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
+  - {name: 晴园•香港•24, server: cmcu.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: chunc.cxzntq.tech}, udp: true}
+  - {name: 晴园•美国•25, server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•26, server: debbc.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /91819299-acb0=c8d7d41d97xianyu, ws-headers: {Host: deabsjfbak.1145114.me}, udp: true}
+  - {name: 晴园•美国•27, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•28, server: debbc.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasaasfa, ws-headers: {Host: est.44kk7t.tech}, udp: true}
+  - {name: 晴园•奥地利•29, server: lonan.europe.1145114.me, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonanhis, ws-headers: {Host: bx.133487.tech}, udp: true}
+  - {name: 晴园•美国•30, server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•31, server: snmxw.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /lonananasaasfa, ws-headers: {Host: est.44kk7t.tech}, udp: true}
+  - {name: 晴园•美国•32, server: snmxw.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonanhis, ws-headers: {Host: bx.qkhbyf.tech}, udp: true}
+  - {name: 晴园•美国•33, server: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•34, server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•35, server: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 2fccd237-1686-48e3-bf2f-9b736b8baf97, sni: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: 晴园•美国•36, server: free2.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-us.6114514.xyz}, udp: true}
+  - {name: 晴园•台湾•37, server: tc11.twtc.dynu.net, port: 443, type: vmess, uuid: c22f08d7-a3d6-451e-8feb-9f7ea676c5d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vbub1, ws-headers: {Host: tc11.twtc.dynu.net}, udp: true}
+  - {name: 晴园•美国•38, server: nlacca.qkhbyf.tech, port: 2087, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /91819299-acb0=c8d7d41d97xianyu, ws-headers: {Host: deabsjfbak.1145114.me}, udp: true}
+  - {name: 晴园•美国•39, server: frashafasd.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: de0002.qkhbyf.tech}, udp: true}
+  - {name: 晴园•美国•40, server: deeuo.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: de001.qkhbyf.tech}, udp: true}
+  - {name: 晴园•美国•41, server: us.lonan.can.1145114.me, port: 80, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: vdsus.1145114.me}, udp: true}
+  - {name: 晴园•美国•42, server: camcwu.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonsdgn, ws-headers: {Host: ca001.cxzntq.tech}, udp: true}
+  - {name: 晴园•美国•43, server: kr.lonan.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: usiorc.qkhbyf.tech}, udp: true}
+  - {name: 晴园•中国•44, server: 112.29.156.248, port: 63051, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-1.db-link01.top}, udp: true}
+  - {name: 晴园•中国•45, server: 112.29.156.248, port: 64006, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-2.db-link01.top}, udp: true}
+  - {name: 晴园•中国•46, server: 112.29.156.248, port: 62092, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: data-us-1.db-link02.top}, udp: true}
+  - {name: 晴园•美国•47, server: free5.6114514.xyz, port: 2052, type: vmess, uuid: 0e281c58-665f-4d6e-a046-5d8ae1001b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl-sg.6114514.xyz}, udp: true}
+  - {name: 晴园•台湾•48, server: b23.ntbq.dynu.net, port: 443, type: vmess, uuid: c22f08d7-a3d6-451e-8feb-9f7ea676c5d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /b23, ws-headers: {Host: b23.ntbq.dynu.net}, udp: true}
+  - {name: 晴园•美国•49, server: us.lonan.qkhbyf.tech, port: 2052, type: vmess, uuid: 8d8ee58a-f207-4274-a54f-79fc95ef96a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lonan, ws-headers: {Host: uswu.1145114.me}, udp: true}
+  - {name: 晴园•中国•50, server: 112.29.156.251, port: 63005, type: vmess, uuid: 526031c1-f7e3-3d74-ab73-3a02fa76f706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in, ws-headers: {Host: cache-us-1.db-link02.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,100 +240,233 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 晴园•香港•16
+      - 晴园•台湾•13
+      - 晴园•台湾•16
+      - 晴园•香港•19
+      - 晴园•香港•24
+      - 晴园•台湾•37
+      - 晴园•台湾•48
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -221,24 +482,56 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 晴园•中国•1
-      - 晴园•美国•2
+      - 晴园•美国•1
+      - 晴园•中国•2
       - 晴园•美国•3
-      - 晴园•奥地利•4
+      - 晴园•中国•4
       - 晴园•中国•5
-      - 晴园•塞浦路斯•6
+      - 晴园•美国•6
       - 晴园•美国•7
-      - 晴园•塞浦路斯•8
-      - 晴园•美国•9
+      - 晴园•韩国•8
+      - 晴园•韩国•9
       - 晴园•美国•10
       - 晴园•美国•11
       - 晴园•美国•12
-      - 晴园•中国•13
-      - 晴园•奥地利•14
+      - 晴园•台湾•13
+      - 晴园•美国•14
       - 晴园•美国•15
-      - 晴园•香港•16
+      - 晴园•台湾•16
       - 晴园•美国•17
       - 晴园•奥地利•18
+      - 晴园•香港•19
+      - 晴园•美国•20
+      - 晴园•美国•21
+      - 晴园•美国•22
+      - 晴园•美国•23
+      - 晴园•香港•24
+      - 晴园•美国•25
+      - 晴园•美国•26
+      - 晴园•美国•27
+      - 晴园•美国•28
+      - 晴园•奥地利•29
+      - 晴园•美国•30
+      - 晴园•美国•31
+      - 晴园•美国•32
+      - 晴园•美国•33
+      - 晴园•美国•34
+      - 晴园•美国•35
+      - 晴园•美国•36
+      - 晴园•台湾•37
+      - 晴园•美国•38
+      - 晴园•美国•39
+      - 晴园•美国•40
+      - 晴园•美国•41
+      - 晴园•美国•42
+      - 晴园•美国•43
+      - 晴园•中国•44
+      - 晴园•中国•45
+      - 晴园•中国•46
+      - 晴园•美国•47
+      - 晴园•台湾•48
+      - 晴园•美国•49
+      - 晴园•中国•50
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
